@@ -21,9 +21,9 @@
 #define LIBBITCOIN_BLOCK_HPP
 
 #include <string>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/primitives.hpp>
-#include <bitcoin/bitcoin/math/hash_number.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/primitives.hpp>
+#include <groestlcoin/groestlcoin/math/hash_number.hpp>
 
 namespace libbitcoin {
 

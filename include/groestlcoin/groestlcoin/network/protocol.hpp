@@ -30,15 +30,15 @@
 #include <vector>
 #include <boost/date_time.hpp>
 #include <boost/filesystem.hpp>
-#include <bitcoin/bitcoin/constants.hpp>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/primitives.hpp>
-#include <bitcoin/bitcoin/network/channel.hpp>
-#include <bitcoin/bitcoin/network/handshake.hpp>
-#include <bitcoin/bitcoin/network/hosts.hpp>
-#include <bitcoin/bitcoin/utility/async_parallel.hpp>
-#include <bitcoin/bitcoin/utility/subscriber.hpp>
-#include <bitcoin/bitcoin/utility/threadpool.hpp>
+#include <groestlcoin/groestlcoin/constants.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/primitives.hpp>
+#include <groestlcoin/groestlcoin/network/channel.hpp>
+#include <groestlcoin/groestlcoin/network/handshake.hpp>
+#include <groestlcoin/groestlcoin/network/hosts.hpp>
+#include <groestlcoin/groestlcoin/utility/async_parallel.hpp>
+#include <groestlcoin/groestlcoin/utility/subscriber.hpp>
+#include <groestlcoin/groestlcoin/utility/threadpool.hpp>
 
 namespace libbitcoin {
 namespace network {

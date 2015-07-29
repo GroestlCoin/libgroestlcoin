@@ -22,9 +22,9 @@
 
 #include <string>
 #include <vector>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/network/channel_loader_module.hpp>
-#include <bitcoin/bitcoin/utility/data.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/network/channel_loader_module.hpp>
+#include <groestlcoin/groestlcoin/utility/data.hpp>
 
 namespace libbitcoin {
 namespace network {

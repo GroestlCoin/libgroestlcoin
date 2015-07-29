@@ -23,8 +23,8 @@
 #include <functional>
 #include <thread>
 #include <boost/asio.hpp>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/utility/threadpool.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/utility/threadpool.hpp>
 
 namespace libbitcoin {
 

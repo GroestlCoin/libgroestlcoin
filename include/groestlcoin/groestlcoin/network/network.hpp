@@ -24,12 +24,12 @@
 #include <thread>
 #include <boost/asio.hpp>
 #include <boost/utility.hpp>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/network/acceptor.hpp>
-#include <bitcoin/bitcoin/network/channel.hpp>
-#include <bitcoin/bitcoin/primitives.hpp>
-#include <bitcoin/bitcoin/error.hpp>
-#include <bitcoin/bitcoin/utility/threadpool.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/network/acceptor.hpp>
+#include <groestlcoin/groestlcoin/network/channel.hpp>
+#include <groestlcoin/groestlcoin/primitives.hpp>
+#include <groestlcoin/groestlcoin/error.hpp>
+#include <groestlcoin/groestlcoin/utility/threadpool.hpp>
 
 namespace libbitcoin {
 namespace network {

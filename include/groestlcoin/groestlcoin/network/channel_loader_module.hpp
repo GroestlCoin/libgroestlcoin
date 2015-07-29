@@ -23,10 +23,10 @@
 #include <functional>
 #include <string>
 #include <system_error>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/error.hpp>
-#include <bitcoin/bitcoin/satoshi_serialize.hpp>
-#include <bitcoin/bitcoin/utility/data.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/error.hpp>
+#include <groestlcoin/groestlcoin/satoshi_serialize.hpp>
+#include <groestlcoin/groestlcoin/utility/data.hpp>
 
 namespace libbitcoin {
 namespace network {

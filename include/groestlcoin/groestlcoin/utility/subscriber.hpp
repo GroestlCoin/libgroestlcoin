@@ -23,9 +23,9 @@
 #include <functional>
 #include <memory>
 #include <stack>
-#include <bitcoin/bitcoin/utility/assert.hpp>
-#include <bitcoin/bitcoin/utility/async_strand.hpp>
-#include <bitcoin/bitcoin/utility/threadpool.hpp>
+#include <groestlcoin/groestlcoin/utility/assert.hpp>
+#include <groestlcoin/groestlcoin/utility/async_strand.hpp>
+#include <groestlcoin/groestlcoin/utility/threadpool.hpp>
 
 namespace libbitcoin {
 

@@ -23,8 +23,8 @@
 #include <cstddef>
 #include <iostream>
 #include <string>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/utility/data.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/utility/data.hpp>
 
 // Regarding Unicode design for Windows:
 //

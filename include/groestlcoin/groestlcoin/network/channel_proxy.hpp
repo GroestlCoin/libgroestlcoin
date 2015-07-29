@@ -30,19 +30,19 @@
 #include <boost/asio.hpp>
 #include <boost/date_time.hpp>
 #include <boost/system/error_code.hpp>
-#include <bitcoin/bitcoin/compat.hpp>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/error.hpp>
-#include <bitcoin/bitcoin/math/checksum.hpp>
-#include <bitcoin/bitcoin/network/authority.hpp>
-#include <bitcoin/bitcoin/network/channel_stream_loader.hpp>
-#include <bitcoin/bitcoin/primitives.hpp>
-#include <bitcoin/bitcoin/satoshi_serialize.hpp>
-#include <bitcoin/bitcoin/utility/async_strand.hpp>
-#include <bitcoin/bitcoin/utility/data.hpp>
-#include <bitcoin/bitcoin/utility/logger.hpp>
-#include <bitcoin/bitcoin/utility/threadpool.hpp>
-#include <bitcoin/bitcoin/utility/subscriber.hpp>
+#include <groestlcoin/groestlcoin/compat.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/error.hpp>
+#include <groestlcoin/groestlcoin/math/checksum.hpp>
+#include <groestlcoin/groestlcoin/network/authority.hpp>
+#include <groestlcoin/groestlcoin/network/channel_stream_loader.hpp>
+#include <groestlcoin/groestlcoin/primitives.hpp>
+#include <groestlcoin/groestlcoin/satoshi_serialize.hpp>
+#include <groestlcoin/groestlcoin/utility/async_strand.hpp>
+#include <groestlcoin/groestlcoin/utility/data.hpp>
+#include <groestlcoin/groestlcoin/utility/logger.hpp>
+#include <groestlcoin/groestlcoin/utility/threadpool.hpp>
+#include <groestlcoin/groestlcoin/utility/subscriber.hpp>
 
 namespace libbitcoin {
 namespace network {

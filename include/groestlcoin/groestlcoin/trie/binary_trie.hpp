@@ -36,11 +36,11 @@
 #include <memory>
 #include <boost/interprocess/allocators/allocator.hpp>
 #include <boost/utility.hpp>
-#include <bitcoin/bitcoin/trie/trie_iterator.hpp>
-#include <bitcoin/bitcoin/trie/trie_reverse_iterator.hpp>
-#include <bitcoin/bitcoin/trie/trie_structure_node.hpp>
-#include <bitcoin/bitcoin/trie/trie_value_node.hpp>
-#include <bitcoin/bitcoin/utility/binary.hpp>
+#include <groestlcoin/groestlcoin/trie/trie_iterator.hpp>
+#include <groestlcoin/groestlcoin/trie/trie_reverse_iterator.hpp>
+#include <groestlcoin/groestlcoin/trie/trie_structure_node.hpp>
+#include <groestlcoin/groestlcoin/trie/trie_value_node.hpp>
+#include <groestlcoin/groestlcoin/utility/binary.hpp>
 
 namespace libbitcoin {
 
@@ -205,6 +205,6 @@ private:
 
 } // namespace libbitcoin
 
-#include <bitcoin/bitcoin/impl/trie/binary_trie.ipp>
+#include <groestlcoin/groestlcoin/impl/trie/binary_trie.ipp>
 
 #endif

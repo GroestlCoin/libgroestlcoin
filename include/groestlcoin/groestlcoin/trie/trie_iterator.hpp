@@ -33,9 +33,9 @@
 #ifndef LIBBITCOIN_TRIE_ITERATOR_HPP
 #define LIBBITCOIN_TRIE_ITERATOR_HPP
 
-#include <bitcoin/bitcoin/trie/trie_structure_node.hpp>
-#include <bitcoin/bitcoin/trie/trie_value_node.hpp>
-#include <bitcoin/bitcoin/utility/binary.hpp>
+#include <groestlcoin/groestlcoin/trie/trie_structure_node.hpp>
+#include <groestlcoin/groestlcoin/trie/trie_value_node.hpp>
+#include <groestlcoin/groestlcoin/utility/binary.hpp>
 
 namespace libbitcoin {
 
@@ -99,6 +99,6 @@ private:
 
 } // namespace libbitcoin
 
-#include <bitcoin/bitcoin/impl/trie/trie_iterator.ipp>
+#include <groestlcoin/groestlcoin/impl/trie/trie_iterator.ipp>
 
 #endif

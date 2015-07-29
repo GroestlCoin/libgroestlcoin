@@ -22,7 +22,7 @@
 
 #include <fstream>
 #include <string>
-#include <bitcoin/bitcoin/define.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
 
 namespace libbitcoin {
 

@@ -21,11 +21,11 @@
 
 #include <cstdint>
 #include <vector>
-#include <bitcoin/bitcoin/constants.hpp>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/script.hpp>
-#include <bitcoin/bitcoin/stealth.hpp>
-#include <bitcoin/bitcoin/math/ec_keys.hpp>
+#include <groestlcoin/groestlcoin/constants.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/script.hpp>
+#include <groestlcoin/groestlcoin/stealth.hpp>
+#include <groestlcoin/groestlcoin/math/ec_keys.hpp>
 
 namespace libbitcoin {
 

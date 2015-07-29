@@ -22,8 +22,8 @@
 
 #include <stdexcept>
 #include <string>
-#include <bitcoin/bitcoin/primitives.hpp>
-#include <bitcoin/bitcoin/utility/data.hpp>
+#include <groestlcoin/groestlcoin/primitives.hpp>
+#include <groestlcoin/groestlcoin/utility/data.hpp>
 
 namespace libbitcoin {
 
@@ -236,7 +236,7 @@ deserializer<Iterator, false> make_deserializer_unsafe(
 
 } // namespace libbitcoin
 
-#include <bitcoin/bitcoin/impl/utility/serializer.ipp>
+#include <groestlcoin/groestlcoin/impl/utility/serializer.ipp>
 
 #endif
 

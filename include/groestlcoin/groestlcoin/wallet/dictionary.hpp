@@ -22,7 +22,7 @@
 
 #include <array>
 #include <vector>
-#include <bitcoin/bitcoin/compat.hpp>
+#include <groestlcoin/groestlcoin/compat.hpp>
 
 namespace libbitcoin {
 

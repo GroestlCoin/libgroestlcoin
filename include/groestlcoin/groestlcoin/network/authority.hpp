@@ -23,8 +23,8 @@
 #include <cstdint>
 #include <string>
 #include <boost/asio.hpp>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/primitives.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/primitives.hpp>
 
 namespace libbitcoin {
 namespace network {

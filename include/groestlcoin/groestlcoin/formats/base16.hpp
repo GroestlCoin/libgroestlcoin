@@ -21,8 +21,8 @@
 #define LIBBITCOIN_BASE16_HPP
 
 #include <string>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/math/hash.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/math/hash.hpp>
 
 namespace libbitcoin {
 
@@ -77,7 +77,7 @@ data_chunk decode_hex(std::string in);
 
 } // namespace libbitcoin
 
-#include <bitcoin/bitcoin/impl/formats/base16.ipp>
+#include <groestlcoin/groestlcoin/impl/formats/base16.ipp>
 
 #endif
 

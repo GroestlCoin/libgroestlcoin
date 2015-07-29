@@ -24,7 +24,7 @@
 #include <cstddef>
 #include <memory>
 #include <system_error>
-#include <bitcoin/bitcoin/utility/assert.hpp>
+#include <groestlcoin/groestlcoin/utility/assert.hpp>
 
 namespace libbitcoin {
 

@@ -22,8 +22,8 @@
 
 #include <ctime>
 #include <string>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/utility/time.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/utility/time.hpp>
 
 namespace libbitcoin {
 

@@ -20,7 +20,7 @@
 #ifndef LIBBITCOIN_THREAD_HPP
 #define LIBBITCOIN_THREAD_HPP
 
-#include <bitcoin/bitcoin/define.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
 
 namespace libbitcoin {
 

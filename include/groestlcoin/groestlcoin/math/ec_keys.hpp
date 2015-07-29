@@ -21,10 +21,10 @@
 #define LIBBITCOIN_EC_KEYS_HPP
 
 #include <cstddef>
-#include <bitcoin/bitcoin/compat.hpp>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/math/hash.hpp>
-#include <bitcoin/bitcoin/utility/data.hpp>
+#include <groestlcoin/groestlcoin/compat.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/math/hash.hpp>
+#include <groestlcoin/groestlcoin/utility/data.hpp>
 
 namespace libbitcoin {
 

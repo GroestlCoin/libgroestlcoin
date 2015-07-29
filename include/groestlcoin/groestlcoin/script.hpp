@@ -24,9 +24,9 @@
 #include <cstdint>
 #include <string>
 #include <vector>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/math/ec_keys.hpp>
-#include <bitcoin/bitcoin/utility/data.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/math/ec_keys.hpp>
+#include <groestlcoin/groestlcoin/utility/data.hpp>
 
 namespace libbitcoin {
 

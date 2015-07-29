@@ -23,12 +23,12 @@
 #include <cstdint>
 #include <memory>
 #include <string>
-#include <bitcoin/bitcoin/constants.hpp>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/network/authority.hpp>
-#include <bitcoin/bitcoin/network/channel_proxy.hpp>
-#include <bitcoin/bitcoin/utility/logger.hpp>
-#include <bitcoin/bitcoin/utility/serializer.hpp>
+#include <groestlcoin/groestlcoin/constants.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/network/authority.hpp>
+#include <groestlcoin/groestlcoin/network/channel_proxy.hpp>
+#include <groestlcoin/groestlcoin/utility/logger.hpp>
+#include <groestlcoin/groestlcoin/utility/serializer.hpp>
 
 namespace libbitcoin {
 namespace network {

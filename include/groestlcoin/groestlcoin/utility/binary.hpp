@@ -20,9 +20,9 @@
 #ifndef LIBBITCOIN_BINARY_HPP
 #define LIBBITCOIN_BINARY_HPP
 
-#include <bitcoin/bitcoin/compat.hpp>
-#include <bitcoin/bitcoin/constants.hpp>
-#include <bitcoin/bitcoin/utility/data.hpp>
+#include <groestlcoin/groestlcoin/compat.hpp>
+#include <groestlcoin/groestlcoin/constants.hpp>
+#include <groestlcoin/groestlcoin/utility/data.hpp>
 
 namespace libbitcoin {
 

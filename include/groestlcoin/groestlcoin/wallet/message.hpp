@@ -20,11 +20,11 @@
 #define LIBBITCOIN_MESSAGE_HPP
 
 #include <string>
-#include <bitcoin/bitcoin/compat.hpp>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/math/ec_keys.hpp>
-#include <bitcoin/bitcoin/math/hash.hpp>
-#include <bitcoin/bitcoin/wallet/address.hpp>
+#include <groestlcoin/groestlcoin/compat.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/math/ec_keys.hpp>
+#include <groestlcoin/groestlcoin/math/hash.hpp>
+#include <groestlcoin/groestlcoin/wallet/address.hpp>
 
 namespace libbitcoin {
 

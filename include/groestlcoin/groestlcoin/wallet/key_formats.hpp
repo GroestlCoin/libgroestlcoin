@@ -20,8 +20,8 @@
 #define LIBBITCOIN_KEY_FORMATS_HPP
 
 #include <string>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/math/ec_keys.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/math/ec_keys.hpp>
 
 namespace libbitcoin {
 

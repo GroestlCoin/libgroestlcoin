@@ -23,14 +23,14 @@
 #include <cstddef>
 #include <memory>
 #include <system_error>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/network/authority.hpp>
-#include <bitcoin/bitcoin/network/channel.hpp>
-#include <bitcoin/bitcoin/network/handshake.hpp>
-#include <bitcoin/bitcoin/network/hosts.hpp>
-#include <bitcoin/bitcoin/network/network.hpp>
-#include <bitcoin/bitcoin/network/protocol.hpp>
-#include <bitcoin/bitcoin/utility/async_strand.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/network/authority.hpp>
+#include <groestlcoin/groestlcoin/network/channel.hpp>
+#include <groestlcoin/groestlcoin/network/handshake.hpp>
+#include <groestlcoin/groestlcoin/network/hosts.hpp>
+#include <groestlcoin/groestlcoin/network/network.hpp>
+#include <groestlcoin/groestlcoin/network/protocol.hpp>
+#include <groestlcoin/groestlcoin/utility/async_strand.hpp>
 
 namespace libbitcoin {
 namespace network {

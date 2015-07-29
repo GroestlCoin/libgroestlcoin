@@ -22,7 +22,7 @@
 
 #include <memory>
 #include <boost/asio.hpp>
-#include <bitcoin/bitcoin/utility/data.hpp>
+#include <groestlcoin/groestlcoin/utility/data.hpp>
 
 namespace libbitcoin {
 namespace network {

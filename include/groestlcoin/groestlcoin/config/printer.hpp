@@ -25,8 +25,8 @@
 #include <vector>
 #include <boost/format.hpp>
 #include <boost/program_options.hpp>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/config/parameter.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/config/parameter.hpp>
 
 /* NOTE: don't declare 'using namespace foo' in headers. */
 

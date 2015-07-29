@@ -21,7 +21,7 @@
 #define LIBBITCOIN_TIME_HPP
 
 #include <limits>
-#include <bitcoin/bitcoin/define.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
 
 #if defined(__MACH__)
     #include <mach/clock.h>
@@ -43,11 +43,11 @@ BC_API int clock_gettime(int clock_id, timespec* ts);
 
 #define CLOCK_REALTIME 0
 
-struct BC_API timespec
+/*!!!R struct BC_API timespec
 {
     time_t tv_sec;
     int32_t tv_nsec;
-};
+};*/
 
 BC_API int clock_gettime(int, timespec* ts);
 

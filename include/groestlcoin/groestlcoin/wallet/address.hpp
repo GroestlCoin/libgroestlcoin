@@ -20,10 +20,10 @@
 #ifndef LIBBITCOIN_ADDRESS_HPP
 #define LIBBITCOIN_ADDRESS_HPP
 
-#include <bitcoin/bitcoin/constants.hpp>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/script.hpp>
-#include <bitcoin/bitcoin/math/hash.hpp>
+#include <groestlcoin/groestlcoin/constants.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/script.hpp>
+#include <groestlcoin/groestlcoin/math/hash.hpp>
 
 namespace libbitcoin {
 

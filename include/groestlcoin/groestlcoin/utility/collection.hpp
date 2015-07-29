@@ -22,7 +22,7 @@
 
 #include <iterator>
 #include <vector>
-#include <bitcoin/bitcoin/define.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
 
 /* NOTE: don't declare 'using namespace foo' in headers. */
 
@@ -80,6 +80,6 @@ typename std::vector<Type>::iterator insert_sorted(std::vector<Type>& list,
 
 } // namespace libbitcoin
 
-#include <bitcoin/bitcoin/impl/utility/collection.ipp>
+#include <groestlcoin/groestlcoin/impl/utility/collection.ipp>
 
 #endif

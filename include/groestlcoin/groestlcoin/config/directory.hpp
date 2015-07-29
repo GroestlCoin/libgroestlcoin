@@ -21,7 +21,7 @@
 #define LIBBITCOIN_DIRECTORY_HPP
 
 #include <string>
-#include <bitcoin/bitcoin/define.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
 
 /* NOTE: don't declare 'using namespace foo' in headers. */
 

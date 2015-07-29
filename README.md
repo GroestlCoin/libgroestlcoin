@@ -4,7 +4,7 @@
 
 # Libbitcoin
 
-*The Bitcoin Development Library*
+*The GroestlCoin Development Library*
 
 **License Overview**
 

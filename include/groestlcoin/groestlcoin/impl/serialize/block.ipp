@@ -21,9 +21,9 @@
 #define LIBBITCOIN_BLOCK_IPP
 
 #ifndef NDEBUG
-#include <bitcoin/bitcoin/formats/base16.hpp>
+#include <groestlcoin/groestlcoin/formats/base16.hpp>
 #endif
-#include <bitcoin/bitcoin/utility/serializer.hpp>
+#include <groestlcoin/groestlcoin/utility/serializer.hpp>
 
 namespace libbitcoin {
 

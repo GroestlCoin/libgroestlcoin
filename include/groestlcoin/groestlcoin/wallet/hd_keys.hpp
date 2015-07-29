@@ -20,11 +20,11 @@
 #define LIBBITCOIN_HD_KEYS_HPP
 
 #include <cstdint>
-#include <bitcoin/bitcoin/compat.hpp>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/math/ec_keys.hpp>
-#include <bitcoin/bitcoin/utility/data.hpp>
-#include <bitcoin/bitcoin/wallet/address.hpp>
+#include <groestlcoin/groestlcoin/compat.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/math/ec_keys.hpp>
+#include <groestlcoin/groestlcoin/utility/data.hpp>
+#include <groestlcoin/groestlcoin/wallet/address.hpp>
 
 namespace libbitcoin {
 

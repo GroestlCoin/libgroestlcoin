@@ -63,6 +63,6 @@ public:
 
 } // namespace libbitcoin
 
-#include <bitcoin/bitcoin/impl/trie/trie_value_node.ipp>
+#include <groestlcoin/groestlcoin/impl/trie/trie_value_node.ipp>
 
 #endif

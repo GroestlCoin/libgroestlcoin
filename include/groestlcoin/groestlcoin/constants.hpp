@@ -22,9 +22,9 @@
 
 #include <cstddef>
 #include <cstdint>
-#include <bitcoin/bitcoin/compat.hpp>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/math/hash_number.hpp>
+#include <groestlcoin/groestlcoin/compat.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/math/hash_number.hpp>
 
 namespace libbitcoin {
 

@@ -22,8 +22,8 @@
 
 #include <algorithm>
 #include <boost/asio/streambuf.hpp>
-#include <bitcoin/bitcoin/utility/assert.hpp>
-#include <bitcoin/bitcoin/utility/endian.hpp>
+#include <groestlcoin/groestlcoin/utility/assert.hpp>
+#include <groestlcoin/groestlcoin/utility/endian.hpp>
 
 namespace libbitcoin {
 

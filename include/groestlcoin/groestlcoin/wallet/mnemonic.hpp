@@ -23,12 +23,12 @@
 #include <cstddef>
 #include <string>
 #include <vector>
-#include <bitcoin/bitcoin/compat.hpp>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/math/hash.hpp>
-#include <bitcoin/bitcoin/unicode/unicode.hpp>
-#include <bitcoin/bitcoin/utility/data.hpp>
-#include <bitcoin/bitcoin/wallet/dictionary.hpp>
+#include <groestlcoin/groestlcoin/compat.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/math/hash.hpp>
+#include <groestlcoin/groestlcoin/unicode/unicode.hpp>
+#include <groestlcoin/groestlcoin/utility/data.hpp>
+#include <groestlcoin/groestlcoin/wallet/dictionary.hpp>
 
 namespace libbitcoin {
 

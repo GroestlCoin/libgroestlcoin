@@ -23,7 +23,7 @@
 #include <string>
 #include <system_error>
 #include <boost/system/error_code.hpp>
-#include <bitcoin/bitcoin/define.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
 
 namespace libbitcoin {
 namespace error {

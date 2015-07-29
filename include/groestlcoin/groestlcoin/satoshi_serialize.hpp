@@ -21,10 +21,10 @@
 #define LIBBITCOIN_SATOSHI_SERIALIZE_HPP
 
 #include <cstdint>
-#include <bitcoin/bitcoin/compat.hpp>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/primitives.hpp>
-#include <bitcoin/bitcoin/transaction.hpp>
+#include <groestlcoin/groestlcoin/compat.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/primitives.hpp>
+#include <groestlcoin/groestlcoin/transaction.hpp>
 
 namespace libbitcoin {
 
@@ -147,8 +147,8 @@ void satoshi_load(const Iterator first, const Iterator last,
 
 } // libbitcoin
 
-#include <bitcoin/bitcoin/impl/serialize/misc.ipp>
-#include <bitcoin/bitcoin/impl/serialize/block.ipp>
+#include <groestlcoin/groestlcoin/impl/serialize/misc.ipp>
+#include <groestlcoin/groestlcoin/impl/serialize/block.ipp>
 
 #endif
 

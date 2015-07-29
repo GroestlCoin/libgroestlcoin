@@ -24,9 +24,9 @@
 #include <string>
 #include <sstream>
 #include <boost/optional.hpp>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/wallet/address.hpp>
-#include <bitcoin/bitcoin/wallet/stealth_address.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/wallet/address.hpp>
+#include <groestlcoin/groestlcoin/wallet/stealth_address.hpp>
 
 namespace libbitcoin {
 

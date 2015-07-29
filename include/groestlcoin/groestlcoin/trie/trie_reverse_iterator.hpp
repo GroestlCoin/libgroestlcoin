@@ -33,8 +33,8 @@
 #ifndef LIBBITCOIN_TRIE_REVERSE_ITERATOR_HPP
 #define LIBBITCOIN_TRIE_REVERSE_ITERATOR_HPP
 
-#include <bitcoin/bitcoin/trie/trie_iterator.hpp>
-#include <bitcoin/bitcoin/utility/binary.hpp>
+#include <groestlcoin/groestlcoin/trie/trie_iterator.hpp>
+#include <groestlcoin/groestlcoin/utility/binary.hpp>
 
 namespace libbitcoin {
 
@@ -95,6 +95,6 @@ private:
 
 } // namespace libbitcoin
 
-#include <bitcoin/bitcoin/impl/trie/trie_reverse_iterator.ipp>
+#include <groestlcoin/groestlcoin/impl/trie/trie_reverse_iterator.ipp>
 
 #endif

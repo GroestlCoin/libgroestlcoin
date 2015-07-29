@@ -23,7 +23,7 @@
 #include <functional>
 #include <map>
 #include <sstream>
-#include <bitcoin/bitcoin/define.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
 
 namespace libbitcoin {
 

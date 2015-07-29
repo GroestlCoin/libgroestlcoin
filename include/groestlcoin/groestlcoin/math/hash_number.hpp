@@ -21,9 +21,9 @@
 #define LIBBITCOIN_HASH_NUMBER_HPP
 
 #include <cstddef>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/math/hash.hpp>
-#include <bitcoin/bitcoin/math/uint256.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/math/hash.hpp>
+#include <groestlcoin/groestlcoin/math/uint256.hpp>
 
 namespace libbitcoin {
 

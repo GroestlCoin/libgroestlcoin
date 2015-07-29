@@ -13,8 +13,8 @@
 #include <string>
 #include <string.h>
 #include <vector>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/utility/assert.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/utility/assert.hpp>
 
 namespace libbitcoin {
 

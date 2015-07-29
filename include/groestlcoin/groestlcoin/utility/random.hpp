@@ -21,8 +21,8 @@
 #define LIBBITCOIN_RANDOM_HPP
 
 #include <cstdint>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/utility/data.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/utility/data.hpp>
 
 namespace libbitcoin {
 

@@ -34,8 +34,8 @@
 #define LIBBITCOIN_TRIE_STRUCTURE_NODE_HPP
 
 #include <boost/utility.hpp>
-#include <bitcoin/bitcoin/trie/trie_value_node.hpp>
-#include <bitcoin/bitcoin/utility/binary.hpp>
+#include <groestlcoin/groestlcoin/trie/trie_value_node.hpp>
+#include <groestlcoin/groestlcoin/utility/binary.hpp>
 
 namespace libbitcoin {
 
@@ -85,6 +85,6 @@ private:
 
 } // namespace libbitcoin
 
-#include <bitcoin/bitcoin/impl/trie/trie_structure_node.ipp>
+#include <groestlcoin/groestlcoin/impl/trie/trie_structure_node.ipp>
 
 #endif

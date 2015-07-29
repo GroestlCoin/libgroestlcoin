@@ -182,132 +182,132 @@ include_bitcoin_HEADERS = \
 
 include_bitcoin_bitcoindir = ${includedir}/bitcoin/bitcoin
 include_bitcoin_bitcoin_HEADERS = \
-    include/bitcoin/bitcoin/block.hpp \
-    include/bitcoin/bitcoin/compat.h \
-    include/bitcoin/bitcoin/compat.hpp \
-    include/bitcoin/bitcoin/constants.hpp \
-    include/bitcoin/bitcoin/define.hpp \
-    include/bitcoin/bitcoin/error.hpp \
-    include/bitcoin/bitcoin/primitives.hpp \
-    include/bitcoin/bitcoin/satoshi_serialize.hpp \
-    include/bitcoin/bitcoin/script.hpp \
-    include/bitcoin/bitcoin/stealth.hpp \
-    include/bitcoin/bitcoin/transaction.hpp \
-    include/bitcoin/bitcoin/version.hpp
+    include/groestlcoin/groestlcoin/block.hpp \
+    include/groestlcoin/groestlcoin/compat.h \
+    include/groestlcoin/groestlcoin/compat.hpp \
+    include/groestlcoin/groestlcoin/constants.hpp \
+    include/groestlcoin/groestlcoin/define.hpp \
+    include/groestlcoin/groestlcoin/error.hpp \
+    include/groestlcoin/groestlcoin/primitives.hpp \
+    include/groestlcoin/groestlcoin/satoshi_serialize.hpp \
+    include/groestlcoin/groestlcoin/script.hpp \
+    include/groestlcoin/groestlcoin/stealth.hpp \
+    include/groestlcoin/groestlcoin/transaction.hpp \
+    include/groestlcoin/groestlcoin/version.hpp
 
-include_bitcoin_bitcoin_configdir = ${includedir}/bitcoin/bitcoin/config
+include_bitcoin_bitcoin_configdir = ${includedir}/groestlcoin/groestlcoin/config
 include_bitcoin_bitcoin_config_HEADERS = \
-    include/bitcoin/bitcoin/config/directory.hpp \
-    include/bitcoin/bitcoin/config/parameter.hpp \
-    include/bitcoin/bitcoin/config/printer.hpp
+    include/groestlcoin/groestlcoin/config/directory.hpp \
+    include/groestlcoin/groestlcoin/config/parameter.hpp \
+    include/groestlcoin/groestlcoin/config/printer.hpp
 
-include_bitcoin_bitcoin_formatsdir = ${includedir}/bitcoin/bitcoin/formats
+include_bitcoin_bitcoin_formatsdir = ${includedir}/groestlcoin/groestlcoin/formats
 include_bitcoin_bitcoin_formats_HEADERS = \
-    include/bitcoin/bitcoin/formats/base10.hpp \
-    include/bitcoin/bitcoin/formats/base16.hpp \
-    include/bitcoin/bitcoin/formats/base58.hpp \
-    include/bitcoin/bitcoin/formats/base64.hpp \
-    include/bitcoin/bitcoin/formats/base85.hpp
+    include/groestlcoin/groestlcoin/formats/base10.hpp \
+    include/groestlcoin/groestlcoin/formats/base16.hpp \
+    include/groestlcoin/groestlcoin/formats/base58.hpp \
+    include/groestlcoin/groestlcoin/formats/base64.hpp \
+    include/groestlcoin/groestlcoin/formats/base85.hpp
 
-include_bitcoin_bitcoin_impl_formatsdir = ${includedir}/bitcoin/bitcoin/impl/formats
+include_bitcoin_bitcoin_impl_formatsdir = ${includedir}/groestlcoin/groestlcoin/impl/formats
 include_bitcoin_bitcoin_impl_formats_HEADERS = \
-    include/bitcoin/bitcoin/impl/formats/base16.ipp
+    include/groestlcoin/groestlcoin/impl/formats/base16.ipp
 
-include_bitcoin_bitcoin_impl_serializedir = ${includedir}/bitcoin/bitcoin/impl/serialize
+include_bitcoin_bitcoin_impl_serializedir = ${includedir}/groestlcoin/groestlcoin/impl/serialize
 include_bitcoin_bitcoin_impl_serialize_HEADERS = \
-    include/bitcoin/bitcoin/impl/serialize/block.ipp \
-    include/bitcoin/bitcoin/impl/serialize/misc.ipp
+    include/groestlcoin/groestlcoin/impl/serialize/block.ipp \
+    include/groestlcoin/groestlcoin/impl/serialize/misc.ipp
 
-include_bitcoin_bitcoin_impl_triedir = ${includedir}/bitcoin/bitcoin/impl/trie
+include_bitcoin_bitcoin_impl_triedir = ${includedir}/groestlcoin/groestlcoin/impl/trie
 include_bitcoin_bitcoin_impl_trie_HEADERS = \
-    include/bitcoin/bitcoin/impl/trie/binary_trie.ipp \
-    include/bitcoin/bitcoin/impl/trie/trie_iterator.ipp \
-    include/bitcoin/bitcoin/impl/trie/trie_reverse_iterator.ipp \
-    include/bitcoin/bitcoin/impl/trie/trie_structure_node.ipp \
-    include/bitcoin/bitcoin/impl/trie/trie_value_node.ipp
+    include/groestlcoin/groestlcoin/impl/trie/binary_trie.ipp \
+    include/groestlcoin/groestlcoin/impl/trie/trie_iterator.ipp \
+    include/groestlcoin/groestlcoin/impl/trie/trie_reverse_iterator.ipp \
+    include/groestlcoin/groestlcoin/impl/trie/trie_structure_node.ipp \
+    include/groestlcoin/groestlcoin/impl/trie/trie_value_node.ipp
 
-include_bitcoin_bitcoin_impl_utilitydir = ${includedir}/bitcoin/bitcoin/impl/utility
+include_bitcoin_bitcoin_impl_utilitydir = ${includedir}/groestlcoin/groestlcoin/impl/utility
 include_bitcoin_bitcoin_impl_utility_HEADERS = \
-    include/bitcoin/bitcoin/impl/utility/array_slice.ipp \
-    include/bitcoin/bitcoin/impl/utility/collection.ipp \
-    include/bitcoin/bitcoin/impl/utility/data.ipp \
-    include/bitcoin/bitcoin/impl/utility/endian.ipp \
-    include/bitcoin/bitcoin/impl/utility/serializer.ipp
+    include/groestlcoin/groestlcoin/impl/utility/array_slice.ipp \
+    include/groestlcoin/groestlcoin/impl/utility/collection.ipp \
+    include/groestlcoin/groestlcoin/impl/utility/data.ipp \
+    include/groestlcoin/groestlcoin/impl/utility/endian.ipp \
+    include/groestlcoin/groestlcoin/impl/utility/serializer.ipp
 
-include_bitcoin_bitcoin_mathdir = ${includedir}/bitcoin/bitcoin/math
+include_bitcoin_bitcoin_mathdir = ${includedir}/groestlcoin/groestlcoin/math
 include_bitcoin_bitcoin_math_HEADERS = \
-    include/bitcoin/bitcoin/math/checksum.hpp \
-    include/bitcoin/bitcoin/math/ec_keys.hpp \
-    include/bitcoin/bitcoin/math/hash.hpp \
-    include/bitcoin/bitcoin/math/hash_number.hpp \
-    include/bitcoin/bitcoin/math/script_number.hpp \
-    include/bitcoin/bitcoin/math/secp256k1_initializer.hpp \
-    include/bitcoin/bitcoin/math/uint256.hpp
+    include/groestlcoin/groestlcoin/math/checksum.hpp \
+    include/groestlcoin/groestlcoin/math/ec_keys.hpp \
+    include/groestlcoin/groestlcoin/math/hash.hpp \
+    include/groestlcoin/groestlcoin/math/hash_number.hpp \
+    include/groestlcoin/groestlcoin/math/script_number.hpp \
+    include/groestlcoin/groestlcoin/math/secp256k1_initializer.hpp \
+    include/groestlcoin/groestlcoin/math/uint256.hpp
 
-include_bitcoin_bitcoin_networkdir = ${includedir}/bitcoin/bitcoin/network
+include_bitcoin_bitcoin_networkdir = ${includedir}/groestlcoin/groestlcoin/network
 include_bitcoin_bitcoin_network_HEADERS = \
-    include/bitcoin/bitcoin/network/acceptor.hpp \
-    include/bitcoin/bitcoin/network/authority.hpp \
-    include/bitcoin/bitcoin/network/channel.hpp \
-    include/bitcoin/bitcoin/network/channel_loader_module.hpp \
-    include/bitcoin/bitcoin/network/channel_proxy.hpp \
-    include/bitcoin/bitcoin/network/channel_stream_loader.hpp \
-    include/bitcoin/bitcoin/network/handshake.hpp \
-    include/bitcoin/bitcoin/network/hosts.hpp \
-    include/bitcoin/bitcoin/network/network.hpp \
-    include/bitcoin/bitcoin/network/protocol.hpp \
-    include/bitcoin/bitcoin/network/seeder.hpp \
-    include/bitcoin/bitcoin/network/shared_const_buffer.hpp
+    include/groestlcoin/groestlcoin/network/acceptor.hpp \
+    include/groestlcoin/groestlcoin/network/authority.hpp \
+    include/groestlcoin/groestlcoin/network/channel.hpp \
+    include/groestlcoin/groestlcoin/network/channel_loader_module.hpp \
+    include/groestlcoin/groestlcoin/network/channel_proxy.hpp \
+    include/groestlcoin/groestlcoin/network/channel_stream_loader.hpp \
+    include/groestlcoin/groestlcoin/network/handshake.hpp \
+    include/groestlcoin/groestlcoin/network/hosts.hpp \
+    include/groestlcoin/groestlcoin/network/network.hpp \
+    include/groestlcoin/groestlcoin/network/protocol.hpp \
+    include/groestlcoin/groestlcoin/network/seeder.hpp \
+    include/groestlcoin/groestlcoin/network/shared_const_buffer.hpp
 
-include_bitcoin_bitcoin_triedir = ${includedir}/bitcoin/bitcoin/trie
+include_bitcoin_bitcoin_triedir = ${includedir}/groestlcoin/groestlcoin/trie
 include_bitcoin_bitcoin_trie_HEADERS = \
-    include/bitcoin/bitcoin/trie/binary_trie.hpp \
-    include/bitcoin/bitcoin/trie/trie_iterator.hpp \
-    include/bitcoin/bitcoin/trie/trie_reverse_iterator.hpp \
-    include/bitcoin/bitcoin/trie/trie_structure_node.hpp \
-    include/bitcoin/bitcoin/trie/trie_value_node.hpp
+    include/groestlcoin/groestlcoin/trie/binary_trie.hpp \
+    include/groestlcoin/groestlcoin/trie/trie_iterator.hpp \
+    include/groestlcoin/groestlcoin/trie/trie_reverse_iterator.hpp \
+    include/groestlcoin/groestlcoin/trie/trie_structure_node.hpp \
+    include/groestlcoin/groestlcoin/trie/trie_value_node.hpp
 
-include_bitcoin_bitcoin_unicodedir = ${includedir}/bitcoin/bitcoin/unicode
+include_bitcoin_bitcoin_unicodedir = ${includedir}/groestlcoin/groestlcoin/unicode
 include_bitcoin_bitcoin_unicode_HEADERS = \
-    include/bitcoin/bitcoin/unicode/console_streambuf.hpp \
-    include/bitcoin/bitcoin/unicode/ifstream.hpp \
-    include/bitcoin/bitcoin/unicode/ofstream.hpp \
-    include/bitcoin/bitcoin/unicode/unicode.hpp \
-    include/bitcoin/bitcoin/unicode/unicode_istream.hpp \
-    include/bitcoin/bitcoin/unicode/unicode_ostream.hpp \
-    include/bitcoin/bitcoin/unicode/unicode_streambuf.hpp
+    include/groestlcoin/groestlcoin/unicode/console_streambuf.hpp \
+    include/groestlcoin/groestlcoin/unicode/ifstream.hpp \
+    include/groestlcoin/groestlcoin/unicode/ofstream.hpp \
+    include/groestlcoin/groestlcoin/unicode/unicode.hpp \
+    include/groestlcoin/groestlcoin/unicode/unicode_istream.hpp \
+    include/groestlcoin/groestlcoin/unicode/unicode_ostream.hpp \
+    include/groestlcoin/groestlcoin/unicode/unicode_streambuf.hpp
 
-include_bitcoin_bitcoin_utilitydir = ${includedir}/bitcoin/bitcoin/utility
+include_bitcoin_bitcoin_utilitydir = ${includedir}/groestlcoin/groestlcoin/utility
 include_bitcoin_bitcoin_utility_HEADERS = \
-    include/bitcoin/bitcoin/utility/array_slice.hpp \
-    include/bitcoin/bitcoin/utility/assert.hpp \
-    include/bitcoin/bitcoin/utility/async_parallel.hpp \
-    include/bitcoin/bitcoin/utility/async_strand.hpp \
-    include/bitcoin/bitcoin/utility/binary.hpp \
-    include/bitcoin/bitcoin/utility/collection.hpp \
-    include/bitcoin/bitcoin/utility/data.hpp \
-    include/bitcoin/bitcoin/utility/decorator.hpp \
-    include/bitcoin/bitcoin/utility/endian.hpp \
-    include/bitcoin/bitcoin/utility/logger.hpp \
-    include/bitcoin/bitcoin/utility/random.hpp \
-    include/bitcoin/bitcoin/utility/serializer.hpp \
-    include/bitcoin/bitcoin/utility/string.hpp \
-    include/bitcoin/bitcoin/utility/subscriber.hpp \
-    include/bitcoin/bitcoin/utility/thread.hpp \
-    include/bitcoin/bitcoin/utility/threadpool.hpp \
-    include/bitcoin/bitcoin/utility/time.hpp \
-    include/bitcoin/bitcoin/utility/timed_section.hpp
+    include/groestlcoin/groestlcoin/utility/array_slice.hpp \
+    include/groestlcoin/groestlcoin/utility/assert.hpp \
+    include/groestlcoin/groestlcoin/utility/async_parallel.hpp \
+    include/groestlcoin/groestlcoin/utility/async_strand.hpp \
+    include/groestlcoin/groestlcoin/utility/binary.hpp \
+    include/groestlcoin/groestlcoin/utility/collection.hpp \
+    include/groestlcoin/groestlcoin/utility/data.hpp \
+    include/groestlcoin/groestlcoin/utility/decorator.hpp \
+    include/groestlcoin/groestlcoin/utility/endian.hpp \
+    include/groestlcoin/groestlcoin/utility/logger.hpp \
+    include/groestlcoin/groestlcoin/utility/random.hpp \
+    include/groestlcoin/groestlcoin/utility/serializer.hpp \
+    include/groestlcoin/groestlcoin/utility/string.hpp \
+    include/groestlcoin/groestlcoin/utility/subscriber.hpp \
+    include/groestlcoin/groestlcoin/utility/thread.hpp \
+    include/groestlcoin/groestlcoin/utility/threadpool.hpp \
+    include/groestlcoin/groestlcoin/utility/time.hpp \
+    include/groestlcoin/groestlcoin/utility/timed_section.hpp
 
-include_bitcoin_bitcoin_walletdir = ${includedir}/bitcoin/bitcoin/wallet
+include_bitcoin_bitcoin_walletdir = ${includedir}/groestlcoin/groestlcoin/wallet
 include_bitcoin_bitcoin_wallet_HEADERS = \
-    include/bitcoin/bitcoin/wallet/address.hpp \
-    include/bitcoin/bitcoin/wallet/dictionary.hpp \
-    include/bitcoin/bitcoin/wallet/hd_keys.hpp \
-    include/bitcoin/bitcoin/wallet/key_formats.hpp \
-    include/bitcoin/bitcoin/wallet/message.hpp \
-    include/bitcoin/bitcoin/wallet/mnemonic.hpp \
-    include/bitcoin/bitcoin/wallet/stealth_address.hpp \
-    include/bitcoin/bitcoin/wallet/uri.hpp
+    include/groestlcoin/groestlcoin/wallet/address.hpp \
+    include/groestlcoin/groestlcoin/wallet/dictionary.hpp \
+    include/groestlcoin/groestlcoin/wallet/hd_keys.hpp \
+    include/groestlcoin/groestlcoin/wallet/key_formats.hpp \
+    include/groestlcoin/groestlcoin/wallet/message.hpp \
+    include/groestlcoin/groestlcoin/wallet/mnemonic.hpp \
+    include/groestlcoin/groestlcoin/wallet/stealth_address.hpp \
+    include/groestlcoin/groestlcoin/wallet/uri.hpp
 
 
 # Custom make targets.
