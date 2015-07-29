@@ -25,8 +25,8 @@
 #include <cstdint>
 #include <initializer_list>
 #include <vector>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/utility/array_slice.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/utility/array_slice.hpp>
 
 namespace libbitcoin {
 
@@ -61,7 +61,7 @@ void extend_data(D& data, const T& other);
 
 } // namespace libbitcoin
 
-#include <bitcoin/bitcoin/impl/utility/data.ipp>
+#include <groestlcoin/groestlcoin/impl/utility/data.ipp>
 
 #endif
 

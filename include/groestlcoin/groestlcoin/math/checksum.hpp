@@ -17,42 +17,37 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_ARRAY_SLICE_HPP
-#define LIBBITCOIN_ARRAY_SLICE_HPP
+#ifndef LIBBITCOIN_CHECKSUM_HPP
+#define LIBBITCOIN_CHECKSUM_HPP
 
-#include <cstddef>
+#include <cstdint>
+#include <groestlcoin/groestlcoin/compat.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/utility/data.hpp>
 
 namespace libbitcoin {
 
+BC_CONSTEXPR size_t checksum_size = sizeof(uint32_t);
+
 /**
- * An read-only STL-style wrapper for array-style collections.
- *
- * This class allows std::array, std::vector, std::string, and c-style arrays
- * to be used interchangeably in functions that expect raw data.
+ * Appends a four-byte checksum to a data chunk.
  */
-template<typename T>
-class array_slice
-{
-public:
-    template<typename Container>
-    array_slice(const Container& container);
+BC_API void append_checksum(data_chunk& data);
 
-    array_slice(const T* begin, const T* end);
+/**
+ * Generate a bitcoin hash checksum. Last 4 bytes of sha256(sha256(data))
+ *
+ * int(sha256(sha256(data))[-4:])
+ */
+BC_API uint32_t bitcoin_checksum(data_slice chunk);
 
-    const T* begin() const;
-    const T* end() const;
-    const T* data() const;
-    std::size_t size() const;
-    bool empty() const;
-
-private:
-    const T* begin_;
-    const T* end_;
-};
+/**
+ * Verifies the last four bytes of a data chunk are a valid checksum of the
+ * earlier bytes. This is typically used to verify base58 data.
+ */
+BC_API bool verify_checksum(data_slice data);
 
 } // namespace libbitcoin
-
-#include <bitcoin/bitcoin/impl/utility/array_slice.ipp>
 
 #endif
 

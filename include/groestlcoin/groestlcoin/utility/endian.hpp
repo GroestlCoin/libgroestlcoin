@@ -20,8 +20,8 @@
 #ifndef LIBBITCOIN_ENDIAN_HPP
 #define LIBBITCOIN_ENDIAN_HPP
 
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/utility/data.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/utility/data.hpp>
 
 namespace libbitcoin {
 
@@ -47,6 +47,6 @@ byte_array<1> to_byte(uint8_t byte);
 
 } // namespace libbitcoin
 
-#include <bitcoin/bitcoin/impl/utility/endian.ipp>
+#include <groestlcoin/groestlcoin/impl/utility/endian.ipp>
 
 #endif

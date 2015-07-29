@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\math">
+      <UniqueIdentifier>{23bd1759-c7f8-497b-ac1b-14d580058c43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\groestlcoin">
+      <UniqueIdentifier>{7ed5fe6e-6be7-4c15-8dd9-fa8b6da93fe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\groestlcoin\utility">
+      <UniqueIdentifier>{c358301e-8a1e-486c-8445-50cfd833553c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="math\checksum.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="libgroestlcoin-config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\block.hpp">
+      <Filter>Header Files\groestlcoin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\compat.h">
+      <Filter>Header Files\groestlcoin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\compat.hpp">
+      <Filter>Header Files\groestlcoin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\constants.hpp">
+      <Filter>Header Files\groestlcoin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\define.hpp">
+      <Filter>Header Files\groestlcoin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\error.hpp">
+      <Filter>Header Files\groestlcoin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\primitives.hpp">
+      <Filter>Header Files\groestlcoin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\satoshi_serialize.hpp">
+      <Filter>Header Files\groestlcoin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\script.hpp">
+      <Filter>Header Files\groestlcoin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\stealth.hpp">
+      <Filter>Header Files\groestlcoin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\transaction.hpp">
+      <Filter>Header Files\groestlcoin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\version.hpp">
+      <Filter>Header Files\groestlcoin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\utility\array_slice.hpp">
+      <Filter>Header Files\groestlcoin\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\utility\assert.hpp">
+      <Filter>Header Files\groestlcoin\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\utility\async_parallel.hpp">
+      <Filter>Header Files\groestlcoin\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\utility\async_strand.hpp">
+      <Filter>Header Files\groestlcoin\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\utility\binary.hpp">
+      <Filter>Header Files\groestlcoin\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\utility\collection.hpp">
+      <Filter>Header Files\groestlcoin\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\utility\data.hpp">
+      <Filter>Header Files\groestlcoin\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\utility\decorator.hpp">
+      <Filter>Header Files\groestlcoin\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\utility\endian.hpp">
+      <Filter>Header Files\groestlcoin\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\utility\logger.hpp">
+      <Filter>Header Files\groestlcoin\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\utility\random.hpp">
+      <Filter>Header Files\groestlcoin\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\utility\serializer.hpp">
+      <Filter>Header Files\groestlcoin\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\utility\string.hpp">
+      <Filter>Header Files\groestlcoin\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\utility\subscriber.hpp">
+      <Filter>Header Files\groestlcoin\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\utility\thread.hpp">
+      <Filter>Header Files\groestlcoin\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\utility\threadpool.hpp">
+      <Filter>Header Files\groestlcoin\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\utility\time.hpp">
+      <Filter>Header Files\groestlcoin\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\utility\timed_section.hpp">
+      <Filter>Header Files\groestlcoin\utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
