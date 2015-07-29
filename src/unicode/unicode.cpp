@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#include <bitcoin/bitcoin/unicode/unicode.hpp>
+#include <groestlcoin/groestlcoin/unicode/unicode.hpp>
 
 #include <cstddef>
 #include <cstring>
@@ -27,12 +27,12 @@
 #include <stdexcept>
 #include <string>
 #include <boost/locale.hpp>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/unicode/console_streambuf.hpp>
-#include <bitcoin/bitcoin/unicode/unicode_istream.hpp>
-#include <bitcoin/bitcoin/unicode/unicode_ostream.hpp>
-#include <bitcoin/bitcoin/utility/assert.hpp>
-#include <bitcoin/bitcoin/utility/data.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/unicode/console_streambuf.hpp>
+#include <groestlcoin/groestlcoin/unicode/unicode_istream.hpp>
+#include <groestlcoin/groestlcoin/unicode/unicode_ostream.hpp>
+#include <groestlcoin/groestlcoin/utility/assert.hpp>
+#include <groestlcoin/groestlcoin/utility/data.hpp>
 
 #ifdef _MSC_VER
     #include <fcntl.h>

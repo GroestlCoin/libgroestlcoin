@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="D_St|Win32">
+      <Configuration>D_St</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="D_St|x64">
+      <Configuration>D_St</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="R_St|x64">
+      <Configuration>R_St</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="R_St|Win32">
+      <Configuration>R_St</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1630C2CD-8A9D-4FB6-A54B-ED164DEC0F21}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>grs</RootNamespace>
+  </PropertyGroup>
+  <Import Project="..\src\cfg\vs\vs-ver.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='D_St|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='D_St|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='R_St|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='R_St|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='R_St|Win32'">
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='R_St|x64'">
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Import Project="..\src\cfg\vs\vs-inc.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='D_St|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='D_St|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='R_St|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='R_St|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='D_St|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='D_St|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='R_St|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='R_St|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='D_St|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\include;..\FOREIGN;..\FOREIGN\secp256k1;..\FOREIGN\czmq</AdditionalIncludeDirectories>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>bx-config.h</ForcedIncludeFiles>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);..\x86_libs</AdditionalLibraryDirectories>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalDependencies>libgroestlcoin.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='D_St|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\include;..\FOREIGN;..\FOREIGN\secp256k1;..\FOREIGN\czmq</AdditionalIncludeDirectories>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>bx-config.h</ForcedIncludeFiles>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);..\x64_libs</AdditionalLibraryDirectories>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalDependencies>libgroestlcoin.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='R_St|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;..\include;..\FOREIGN;..\FOREIGN\secp256k1;..\FOREIGN\czmq</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>bx-config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <AdditionalLibraryDirectories>$(OutDir);..\x86_libs</AdditionalLibraryDirectories>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalDependencies>libgroestlcoin.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='R_St|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='R_St|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\include;..\FOREIGN;..\FOREIGN\secp256k1;..\FOREIGN\czmq</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>bx-config.h</ForcedIncludeFiles>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='R_St|x64'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <AdditionalLibraryDirectories>$(OutDir);..\x64_libs</AdditionalLibraryDirectories>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalDependencies>libgroestlcoin.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="console\main.cpp" />
+    <ClCompile Include="dispatch.cpp" />
+    <ClCompile Include="display.cpp" />
+    <ClCompile Include="generated.cpp" />
+    <ClCompile Include="primitives\address.cpp" />
+    <ClCompile Include="primitives\base16.cpp" />
+    <ClCompile Include="primitives\base2.cpp" />
+    <ClCompile Include="primitives\base58.cpp" />
+    <ClCompile Include="primitives\base64.cpp" />
+    <ClCompile Include="primitives\base85.cpp" />
+    <ClCompile Include="primitives\btc.cpp" />
+    <ClCompile Include="primitives\btc160.cpp" />
+    <ClCompile Include="primitives\btc256.cpp" />
+    <ClCompile Include="primitives\byte.cpp" />
+    <ClCompile Include="primitives\cert_key.cpp" />
+    <ClCompile Include="primitives\ec_private.cpp" />
+    <ClCompile Include="primitives\ec_public.cpp" />
+    <ClCompile Include="primitives\encoding.cpp" />
+    <ClCompile Include="primitives\endorsement.cpp" />
+    <ClCompile Include="primitives\hashtype.cpp" />
+    <ClCompile Include="primitives\hd_key.cpp" />
+    <ClCompile Include="primitives\hd_priv.cpp" />
+    <ClCompile Include="primitives\hd_pub.cpp" />
+    <ClCompile Include="primitives\header.cpp" />
+    <ClCompile Include="primitives\input.cpp" />
+    <ClCompile Include="primitives\language.cpp" />
+    <ClCompile Include="primitives\output.cpp" />
+    <ClCompile Include="primitives\point.cpp" />
+    <ClCompile Include="primitives\raw.cpp" />
+    <ClCompile Include="primitives\script.cpp" />
+    <ClCompile Include="primitives\signature.cpp" />
+    <ClCompile Include="primitives\stealth.cpp" />
+    <ClCompile Include="primitives\transaction.cpp" />
+    <ClCompile Include="primitives\uri.cpp" />
+    <ClCompile Include="primitives\wif.cpp" />
+    <ClCompile Include="primitives\wrapper.cpp" />
+    <ClCompile Include="utility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\address-decode.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\address-embed.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\address-encode.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\address-validate.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\base16-decode.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\base16-encode.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\base58-decode.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\base58-encode.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\base58check-decode.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\base58check-encode.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\base64-decode.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\base64-encode.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\bci-fetch-last-height.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\bci-history.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\bitcoin160.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\bitcoin256.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\blke-fetch-transaction.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\btc-to-satoshi.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\cert-new.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\cert-public.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\ec-add-secrets.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\ec-add.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\ec-lock.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\ec-multiply-secrets.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\ec-multiply.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\ec-new.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\ec-to-address.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\ec-to-public.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\ec-to-wif.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\ec-unlock.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\fetch-balance.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\fetch-header.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\fetch-height.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\fetch-history.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\fetch-public-key.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\fetch-stealth.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\fetch-tx-index.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\fetch-tx.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\fetch-utxo.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\genaddr.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\genpriv.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\genpub.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\hd-new.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\hd-private.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\hd-public.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\hd-to-address.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\hd-to-ec.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\hd-to-public.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\hd-to-wif.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\help.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\initchain.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\input-set.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\input-sign.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\input-validate.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\message-sign.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\message-validate.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\mnemonic-decode.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\mnemonic-encode.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\mnemonic-new.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\mnemonic-to-seed.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\mpk.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\newseed.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\qrcode.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\ripemd160.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\satoshi-to-btc.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\script-decode.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\script-encode.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\script-to-address.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\seed.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\send-tx-node.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\send-tx-p2p.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\send-tx.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\sendtx-bci.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\settings.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\sha160.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\sha256.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\sha512.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\showblkhead.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\stealth-decode.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\stealth-encode.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\stealth-initiate.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\stealth-newkey.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\stealth-public.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\stealth-secret.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\stealth-shared.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\tx-decode.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\tx-encode.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\tx-sign.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\uri-decode.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\uri-encode.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\validate-tx.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\wallet.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\watch-address.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\watch-tx.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\wif-to-ec.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\wif-to-public.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\wrap-decode.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\commands\wrap-encode.hpp" />
+    <ClInclude Include="bx-config.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -18,10 +18,22 @@
     <Filter Include="Header Files\groestlcoin\utility">
       <UniqueIdentifier>{c358301e-8a1e-486c-8445-50cfd833553c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\unicode">
+      <UniqueIdentifier>{d7ee61fa-e705-4418-9257-2b1534f18595}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="math\checksum.cpp">
       <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="unicode\unicode.cpp">
+      <Filter>Source Files\unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="unicode\unicode_istream.cpp">
+      <Filter>Source Files\unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="unicode\console_streambuf.cpp">
+      <Filter>Source Files\unicode</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

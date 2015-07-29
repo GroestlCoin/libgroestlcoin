@@ -196,6 +196,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="math\checksum.cpp" />
+    <ClCompile Include="unicode\console_streambuf.cpp" />
+    <ClCompile Include="unicode\unicode.cpp" />
+    <ClCompile Include="unicode\unicode_istream.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\groestlcoin\groestlcoin.hpp" />
