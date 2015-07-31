@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#include <bitcoin/bitcoin/satoshi_serialize.hpp>
+#include <groestlcoin/groestlcoin/satoshi_serialize.hpp>
 
 #include <string>
 #include <cstdint>

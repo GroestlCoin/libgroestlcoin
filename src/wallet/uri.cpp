@@ -17,17 +17,17 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#include <bitcoin/bitcoin/wallet/uri.hpp>
+#include <groestlcoin/groestlcoin/wallet/uri.hpp>
 
 #include <cstdint>
 #include <ctype.h>
 #include <iomanip>
 #include <boost/algorithm/string.hpp>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/formats/base10.hpp>
-#include <bitcoin/bitcoin/formats/base16.hpp>
-#include <bitcoin/bitcoin/formats/base58.hpp>
-#include <bitcoin/bitcoin/wallet/stealth_address.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/formats/base10.hpp>
+#include <groestlcoin/groestlcoin/formats/base16.hpp>
+#include <groestlcoin/groestlcoin/formats/base58.hpp>
+#include <groestlcoin/groestlcoin/wallet/stealth_address.hpp>
 
 namespace libbitcoin {
 

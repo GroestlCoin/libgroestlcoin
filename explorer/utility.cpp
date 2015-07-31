@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#include <bitcoin/explorer/utility.hpp>
+#include <groestlcoin/explorer/utility.hpp>
 
 #include <iomanip>
 #include <iostream>
@@ -37,9 +37,9 @@
 #include <boost/property_tree/info_parser.hpp>
 #include <boost/property_tree/json_parser.hpp>
 #include <boost/property_tree/xml_parser.hpp>
-#include <bitcoin/bitcoin.hpp>
-#include <bitcoin/explorer/command.hpp>
-#include <bitcoin/explorer/define.hpp>
+#include <groestlcoin/groestlcoin.hpp>
+#include <groestlcoin/explorer/command.hpp>
+#include <groestlcoin/explorer/define.hpp>
 
 using namespace boost::posix_time;
 using namespace bc::client;

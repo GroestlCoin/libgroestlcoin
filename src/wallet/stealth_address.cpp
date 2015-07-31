@@ -16,18 +16,18 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#include <bitcoin/bitcoin/wallet/stealth_address.hpp>
+#include <groestlcoin/groestlcoin/wallet/stealth_address.hpp>
 
 #include <algorithm>
 #include <cstdint>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/stealth.hpp>
-#include <bitcoin/bitcoin/formats/base58.hpp>
-#include <bitcoin/bitcoin/math/checksum.hpp>
-#include <bitcoin/bitcoin/math/ec_keys.hpp>
-#include <bitcoin/bitcoin/math/hash.hpp>
-#include <bitcoin/bitcoin/utility/assert.hpp>
-#include <bitcoin/bitcoin/utility/endian.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/stealth.hpp>
+#include <groestlcoin/groestlcoin/formats/base58.hpp>
+#include <groestlcoin/groestlcoin/math/checksum.hpp>
+#include <groestlcoin/groestlcoin/math/ec_keys.hpp>
+#include <groestlcoin/groestlcoin/math/hash.hpp>
+#include <groestlcoin/groestlcoin/utility/assert.hpp>
+#include <groestlcoin/groestlcoin/utility/endian.hpp>
 
 namespace libbitcoin {
 

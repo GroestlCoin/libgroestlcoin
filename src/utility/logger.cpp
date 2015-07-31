@@ -19,8 +19,8 @@
  */
 #include <iostream>
 #include <sstream>
-#include <bitcoin/bitcoin/utility/logger.hpp>
-#include <bitcoin/bitcoin/unicode/unicode.hpp>
+#include <groestlcoin/groestlcoin/utility/logger.hpp>
+#include <groestlcoin/groestlcoin/unicode/unicode.hpp>
 
 namespace libbitcoin {
 

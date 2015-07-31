@@ -95,7 +95,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;..\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;..\include;..\FOREIGN\secp256k1</AdditionalIncludeDirectories>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -118,7 +118,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;..\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;..\include;..\FOREIGN\secp256k1</AdditionalIncludeDirectories>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -141,7 +141,7 @@
       <Optimization>MinSpace</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;..\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;..\include;..\FOREIGN\secp256k1</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>libgroestlcoin-config.h</ForcedIncludeFiles>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <BufferSecurityCheck>false</BufferSecurityCheck>
@@ -176,7 +176,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='R_St|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.;..\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.;..\include;..\FOREIGN\secp256k1</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>libgroestlcoin-config.h</ForcedIncludeFiles>
     </ClCompile>
   </ItemDefinitionGroup>
@@ -195,10 +195,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="formats\base10.cpp" />
+    <ClCompile Include="formats\base16.cpp" />
+    <ClCompile Include="formats\base58.cpp" />
+    <ClCompile Include="formats\base64.cpp" />
+    <ClCompile Include="formats\base85.cpp" />
     <ClCompile Include="math\checksum.cpp" />
+    <ClCompile Include="math\ec_keys.cpp" />
+    <ClCompile Include="math\hash.cpp" />
+    <ClCompile Include="math\script_number.cpp" />
+    <ClCompile Include="network\channel.cpp" />
+    <ClCompile Include="network\hosts.cpp" />
+    <ClCompile Include="network\protocol.cpp" />
+    <ClCompile Include="satoshi_serialize.cpp" />
+    <ClCompile Include="script.cpp" />
     <ClCompile Include="unicode\console_streambuf.cpp" />
+    <ClCompile Include="unicode\ofstream.cpp" />
     <ClCompile Include="unicode\unicode.cpp" />
     <ClCompile Include="unicode\unicode_istream.cpp" />
+    <ClCompile Include="unicode\unicode_ostream.cpp" />
+    <ClCompile Include="unicode\unicode_streambuf.cpp" />
+    <ClCompile Include="utility\binary.cpp" />
+    <ClCompile Include="utility\logger.cpp" />
+    <ClCompile Include="utility\random.cpp" />
+    <ClCompile Include="utility\string.cpp" />
+    <ClCompile Include="wallet\address.cpp" />
+    <ClCompile Include="wallet\dictionary.cpp" />
+    <ClCompile Include="wallet\hd_keys.cpp" />
+    <ClCompile Include="wallet\key_formats.cpp" />
+    <ClCompile Include="wallet\stealth_address.cpp" />
+    <ClCompile Include="wallet\uri.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\groestlcoin\groestlcoin.hpp" />

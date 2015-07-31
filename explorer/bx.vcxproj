@@ -107,7 +107,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(OutDir);..\x86_libs</AdditionalLibraryDirectories>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
-      <AdditionalDependencies>libgroestlcoin.lib</AdditionalDependencies>
+      <AdditionalDependencies>libgroestlcoin.lib; openssl.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='D_St|x64'">
@@ -131,7 +131,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(OutDir);..\x64_libs</AdditionalLibraryDirectories>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
-      <AdditionalDependencies>libgroestlcoin.lib</AdditionalDependencies>
+      <AdditionalDependencies>libgroestlcoin.lib; openssl.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='R_St|Win32'">
@@ -155,7 +155,7 @@
       <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
       <AdditionalLibraryDirectories>$(OutDir);..\x86_libs</AdditionalLibraryDirectories>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
-      <AdditionalDependencies>libgroestlcoin.lib</AdditionalDependencies>
+      <AdditionalDependencies>libgroestlcoin.lib; openssl.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='R_St|x64'">
@@ -191,14 +191,114 @@
       <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
       <AdditionalLibraryDirectories>$(OutDir);..\x64_libs</AdditionalLibraryDirectories>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
-      <AdditionalDependencies>libgroestlcoin.lib</AdditionalDependencies>
+      <AdditionalDependencies>libgroestlcoin.lib; openssl.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\client\obelisk\obelisk_router.cpp" />
+    <ClCompile Include="commands\address-decode.cpp" />
+    <ClCompile Include="commands\address-embed.cpp" />
+    <ClCompile Include="commands\address-encode.cpp" />
+    <ClCompile Include="commands\address-validate.cpp" />
+    <ClCompile Include="commands\base16-decode.cpp" />
+    <ClCompile Include="commands\base16-encode.cpp" />
+    <ClCompile Include="commands\base58-decode.cpp" />
+    <ClCompile Include="commands\base58-encode.cpp" />
+    <ClCompile Include="commands\base58check-decode.cpp" />
+    <ClCompile Include="commands\base58check-encode.cpp" />
+    <ClCompile Include="commands\base64-decode.cpp" />
+    <ClCompile Include="commands\base64-encode.cpp" />
+    <ClCompile Include="commands\bci-fetch-last-height.cpp" />
+    <ClCompile Include="commands\bci-history.cpp" />
+    <ClCompile Include="commands\bitcoin160.cpp" />
+    <ClCompile Include="commands\bitcoin256.cpp" />
+    <ClCompile Include="commands\blke-fetch-transaction.cpp" />
+    <ClCompile Include="commands\btc-to-satoshi.cpp" />
+    <ClCompile Include="commands\cert-new.cpp" />
+    <ClCompile Include="commands\cert-public.cpp" />
+    <ClCompile Include="commands\ec-add-secrets.cpp" />
+    <ClCompile Include="commands\ec-add.cpp" />
+    <ClCompile Include="commands\ec-lock.cpp" />
+    <ClCompile Include="commands\ec-multiply-secrets.cpp" />
+    <ClCompile Include="commands\ec-multiply.cpp" />
+    <ClCompile Include="commands\ec-new.cpp" />
+    <ClCompile Include="commands\ec-to-address.cpp" />
+    <ClCompile Include="commands\ec-to-public.cpp" />
+    <ClCompile Include="commands\ec-to-wif.cpp" />
+    <ClCompile Include="commands\ec-unlock.cpp" />
+    <ClCompile Include="commands\fetch-balance.cpp" />
+    <ClCompile Include="commands\fetch-header.cpp" />
+    <ClCompile Include="commands\fetch-height.cpp" />
+    <ClCompile Include="commands\fetch-history.cpp" />
+    <ClCompile Include="commands\fetch-public-key.cpp" />
+    <ClCompile Include="commands\fetch-stealth.cpp" />
+    <ClCompile Include="commands\fetch-tx-index.cpp" />
+    <ClCompile Include="commands\fetch-tx.cpp" />
+    <ClCompile Include="commands\fetch-utxo.cpp" />
+    <ClCompile Include="commands\genaddr.cpp" />
+    <ClCompile Include="commands\genpriv.cpp" />
+    <ClCompile Include="commands\genpub.cpp" />
+    <ClCompile Include="commands\hd-new.cpp" />
+    <ClCompile Include="commands\hd-private.cpp" />
+    <ClCompile Include="commands\hd-public.cpp" />
+    <ClCompile Include="commands\hd-to-address.cpp" />
+    <ClCompile Include="commands\hd-to-ec.cpp" />
+    <ClCompile Include="commands\hd-to-public.cpp" />
+    <ClCompile Include="commands\hd-to-wif.cpp" />
+    <ClCompile Include="commands\help.cpp" />
+    <ClCompile Include="commands\initchain.cpp" />
+    <ClCompile Include="commands\input-set.cpp" />
+    <ClCompile Include="commands\input-sign.cpp" />
+    <ClCompile Include="commands\input-validate.cpp" />
+    <ClCompile Include="commands\message-sign.cpp" />
+    <ClCompile Include="commands\message-validate.cpp" />
+    <ClCompile Include="commands\mnemonic-decode.cpp" />
+    <ClCompile Include="commands\mnemonic-encode.cpp" />
+    <ClCompile Include="commands\mnemonic-new.cpp" />
+    <ClCompile Include="commands\mnemonic-to-seed.cpp" />
+    <ClCompile Include="commands\mpk.cpp" />
+    <ClCompile Include="commands\newseed.cpp" />
+    <ClCompile Include="commands\qrcode.cpp" />
+    <ClCompile Include="commands\ripemd160.cpp" />
+    <ClCompile Include="commands\satoshi-to-btc.cpp" />
+    <ClCompile Include="commands\script-decode.cpp" />
+    <ClCompile Include="commands\script-encode.cpp" />
+    <ClCompile Include="commands\script-to-address.cpp" />
+    <ClCompile Include="commands\seed.cpp" />
+    <ClCompile Include="commands\send-tx-node.cpp" />
+    <ClCompile Include="commands\send-tx-p2p.cpp" />
+    <ClCompile Include="commands\send-tx.cpp" />
+    <ClCompile Include="commands\sendtx-bci.cpp" />
+    <ClCompile Include="commands\settings.cpp" />
+    <ClCompile Include="commands\sha160.cpp" />
+    <ClCompile Include="commands\sha256.cpp" />
+    <ClCompile Include="commands\sha512.cpp" />
+    <ClCompile Include="commands\showblkhead.cpp" />
+    <ClCompile Include="commands\stealth-decode.cpp" />
+    <ClCompile Include="commands\stealth-encode.cpp" />
+    <ClCompile Include="commands\stealth-initiate.cpp" />
+    <ClCompile Include="commands\stealth-newkey.cpp" />
+    <ClCompile Include="commands\stealth-public.cpp" />
+    <ClCompile Include="commands\stealth-secret.cpp" />
+    <ClCompile Include="commands\stealth-shared.cpp" />
+    <ClCompile Include="commands\tx-decode.cpp" />
+    <ClCompile Include="commands\tx-encode.cpp" />
+    <ClCompile Include="commands\tx-sign.cpp" />
+    <ClCompile Include="commands\uri-decode.cpp" />
+    <ClCompile Include="commands\uri-encode.cpp" />
+    <ClCompile Include="commands\validate-tx.cpp" />
+    <ClCompile Include="commands\wallet.cpp" />
+    <ClCompile Include="commands\watch-address.cpp" />
+    <ClCompile Include="commands\watch-tx.cpp" />
+    <ClCompile Include="commands\wif-to-ec.cpp" />
+    <ClCompile Include="commands\wif-to-public.cpp" />
+    <ClCompile Include="commands\wrap-decode.cpp" />
+    <ClCompile Include="commands\wrap-encode.cpp" />
     <ClCompile Include="console\main.cpp" />
     <ClCompile Include="dispatch.cpp" />
     <ClCompile Include="display.cpp" />
     <ClCompile Include="generated.cpp" />
+    <ClCompile Include="obelisk_client.cpp" />
     <ClCompile Include="primitives\address.cpp" />
     <ClCompile Include="primitives\base16.cpp" />
     <ClCompile Include="primitives\base2.cpp" />
@@ -231,6 +331,7 @@
     <ClCompile Include="primitives\uri.cpp" />
     <ClCompile Include="primitives\wif.cpp" />
     <ClCompile Include="primitives\wrapper.cpp" />
+    <ClCompile Include="prop_tree.cpp" />
     <ClCompile Include="utility.cpp" />
   </ItemGroup>
   <ItemGroup>

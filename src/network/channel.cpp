@@ -17,11 +17,11 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#include <bitcoin/bitcoin/network/channel.hpp>
+#include <groestlcoin/groestlcoin/network/channel.hpp>
 
-#include <bitcoin/bitcoin/network/authority.hpp>
-#include <bitcoin/bitcoin/network/channel_proxy.hpp>
-#include <bitcoin/bitcoin/primitives.hpp>
+#include <groestlcoin/groestlcoin/network/authority.hpp>
+#include <groestlcoin/groestlcoin/network/channel_proxy.hpp>
+#include <groestlcoin/groestlcoin/primitives.hpp>
 
 namespace libbitcoin {
 namespace network {
