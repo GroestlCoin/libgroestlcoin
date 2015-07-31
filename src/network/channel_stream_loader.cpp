@@ -17,12 +17,12 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#include <bitcoin/bitcoin/network/channel_stream_loader.hpp>
+#include <groestlcoin/groestlcoin/network/channel_stream_loader.hpp>
 
 #include <string>
-#include <bitcoin/bitcoin/network/channel_loader_module.hpp>
-#include <bitcoin/bitcoin/utility/assert.hpp>
-#include <bitcoin/bitcoin/utility/data.hpp>
+#include <groestlcoin/groestlcoin/network/channel_loader_module.hpp>
+#include <groestlcoin/groestlcoin/utility/assert.hpp>
+#include <groestlcoin/groestlcoin/utility/data.hpp>
 
 namespace libbitcoin {
 namespace network {

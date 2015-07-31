@@ -17,15 +17,15 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#include <bitcoin/bitcoin/network/acceptor.hpp>
+#include <groestlcoin/groestlcoin/network/acceptor.hpp>
 
 #include <algorithm>
 #include <functional>
 #include <iostream>
 #include <system_error>
 #include <boost/asio.hpp>
-#include <bitcoin/bitcoin/error.hpp>
-#include <bitcoin/bitcoin/network/channel.hpp>
+#include <groestlcoin/groestlcoin/error.hpp>
+#include <groestlcoin/groestlcoin/network/channel.hpp>
 
 namespace libbitcoin {
 namespace network {

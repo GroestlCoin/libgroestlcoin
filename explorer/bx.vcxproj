@@ -107,7 +107,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(OutDir);..\x86_libs</AdditionalLibraryDirectories>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
-      <AdditionalDependencies>libgroestlcoin.lib; openssl.lib</AdditionalDependencies>
+      <AdditionalDependencies>libgroestlcoin.lib; mpir.lib; czmq.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='D_St|x64'">
@@ -131,7 +131,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(OutDir);..\x64_libs</AdditionalLibraryDirectories>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
-      <AdditionalDependencies>libgroestlcoin.lib; openssl.lib</AdditionalDependencies>
+      <AdditionalDependencies>libgroestlcoin.lib; mpir.lib; czmq.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='R_St|Win32'">
@@ -155,7 +155,7 @@
       <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
       <AdditionalLibraryDirectories>$(OutDir);..\x86_libs</AdditionalLibraryDirectories>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
-      <AdditionalDependencies>libgroestlcoin.lib; openssl.lib</AdditionalDependencies>
+      <AdditionalDependencies>libgroestlcoin.lib; mpir.lib; czmq.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='R_St|x64'">
@@ -191,11 +191,14 @@
       <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
       <AdditionalLibraryDirectories>$(OutDir);..\x64_libs</AdditionalLibraryDirectories>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
-      <AdditionalDependencies>libgroestlcoin.lib; openssl.lib</AdditionalDependencies>
+      <AdditionalDependencies>libgroestlcoin.lib; mpir.lib; czmq.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\client\obelisk\obelisk_codec.cpp" />
     <ClCompile Include="..\client\obelisk\obelisk_router.cpp" />
+    <ClCompile Include="async_client.cpp" />
+    <ClCompile Include="callback_state.cpp" />
     <ClCompile Include="commands\address-decode.cpp" />
     <ClCompile Include="commands\address-embed.cpp" />
     <ClCompile Include="commands\address-encode.cpp" />

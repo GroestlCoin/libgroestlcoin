@@ -17,10 +17,10 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#include <bitcoin/bitcoin/error.hpp>
+#include <groestlcoin/groestlcoin/error.hpp>
 
 #include <boost/system/error_code.hpp>
-#include <bitcoin/bitcoin/compat.hpp>
+#include <groestlcoin/groestlcoin/compat.hpp>
 
 using namespace bc;
 

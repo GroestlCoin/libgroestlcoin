@@ -17,21 +17,21 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#include <bitcoin/bitcoin/network/handshake.hpp>
+#include <groestlcoin/groestlcoin/network/handshake.hpp>
 
 #include <cstdint>
 #include <cstdlib>
 #include <functional>
 #include <system_error>
-#include <bitcoin/bitcoin/constants.hpp>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/error.hpp>
-#include <bitcoin/bitcoin/network/channel.hpp>
-#include <bitcoin/bitcoin/network/network.hpp>
-#include <bitcoin/bitcoin/primitives.hpp>
-#include <bitcoin/bitcoin/utility/async_parallel.hpp>
-#include <bitcoin/bitcoin/utility/random.hpp>
-#include <bitcoin/bitcoin/version.hpp>
+#include <groestlcoin/groestlcoin/constants.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/error.hpp>
+#include <groestlcoin/groestlcoin/network/channel.hpp>
+#include <groestlcoin/groestlcoin/network/network.hpp>
+#include <groestlcoin/groestlcoin/primitives.hpp>
+#include <groestlcoin/groestlcoin/utility/async_parallel.hpp>
+#include <groestlcoin/groestlcoin/utility/random.hpp>
+#include <groestlcoin/groestlcoin/version.hpp>
 
 namespace libbitcoin {
 namespace network {

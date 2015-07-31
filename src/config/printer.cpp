@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#include <bitcoin/bitcoin/config/printer.hpp>
+#include <groestlcoin/groestlcoin/config/printer.hpp>
 
 #include <algorithm>
 #include <iostream>
@@ -26,11 +26,11 @@
 #include <boost/algorithm/string.hpp>
 #include <boost/format.hpp>
 #include <boost/program_options.hpp>
-#include <bitcoin/bitcoin/config/parameter.hpp>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/utility/assert.hpp>
-#include <bitcoin/bitcoin/utility/collection.hpp>
-#include <bitcoin/bitcoin/utility/string.hpp>
+#include <groestlcoin/groestlcoin/config/parameter.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/utility/assert.hpp>
+#include <groestlcoin/groestlcoin/utility/collection.hpp>
+#include <groestlcoin/groestlcoin/utility/string.hpp>
 
 // We built this because po::options_description.print() sucks.
 

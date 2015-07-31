@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#include <bitcoin/client/obelisk/obelisk_router.hpp>
+#include <groestlcoin/client/obelisk/obelisk_router.hpp>
 
 namespace libbitcoin {
 namespace client {

@@ -20,9 +20,9 @@
 #include <memory>
 #include <boost/asio.hpp>
 #include <boost/date_time.hpp>
-#include <bitcoin/bitcoin/network/channel.hpp>
-#include <bitcoin/bitcoin/network/channel_proxy.hpp>
-#include <bitcoin/bitcoin/network/network.hpp>
+#include <groestlcoin/groestlcoin/network/channel.hpp>
+#include <groestlcoin/groestlcoin/network/channel_proxy.hpp>
+#include <groestlcoin/groestlcoin/network/network.hpp>
 
 namespace libbitcoin {
 namespace network {

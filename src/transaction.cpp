@@ -17,20 +17,20 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#include <bitcoin/bitcoin/transaction.hpp>
+#include <groestlcoin/groestlcoin/transaction.hpp>
 
 #include <cstdint>
 #include <cstddef>
-#include <bitcoin/bitcoin/constants.hpp>
-#include <bitcoin/bitcoin/formats/base16.hpp>
-#include <bitcoin/bitcoin/math/hash.hpp>
-#include <bitcoin/bitcoin/primitives.hpp>
-#include <bitcoin/bitcoin/satoshi_serialize.hpp>
-#include <bitcoin/bitcoin/utility/assert.hpp>
-#include <bitcoin/bitcoin/utility/data.hpp>
-#include <bitcoin/bitcoin/utility/endian.hpp>
-#include <bitcoin/bitcoin/utility/logger.hpp>
-#include <bitcoin/bitcoin/utility/serializer.hpp>
+#include <groestlcoin/groestlcoin/constants.hpp>
+#include <groestlcoin/groestlcoin/formats/base16.hpp>
+#include <groestlcoin/groestlcoin/math/hash.hpp>
+#include <groestlcoin/groestlcoin/primitives.hpp>
+#include <groestlcoin/groestlcoin/satoshi_serialize.hpp>
+#include <groestlcoin/groestlcoin/utility/assert.hpp>
+#include <groestlcoin/groestlcoin/utility/data.hpp>
+#include <groestlcoin/groestlcoin/utility/endian.hpp>
+#include <groestlcoin/groestlcoin/utility/logger.hpp>
+#include <groestlcoin/groestlcoin/utility/serializer.hpp>
 
 namespace libbitcoin {
 

@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#include <bitcoin/bitcoin/network/channel_proxy.hpp>
+#include <groestlcoin/groestlcoin/network/channel_proxy.hpp>
 
 #include <cstddef>
 #include <cstdint>
@@ -28,21 +28,21 @@
 #include <boost/date_time.hpp>
 #include <boost/format.hpp>
 #include <boost/system/error_code.hpp>
-#include <bitcoin/bitcoin/error.hpp>
-#include <bitcoin/bitcoin/math/checksum.hpp>
-#include <bitcoin/bitcoin/network/authority.hpp>
-#include <bitcoin/bitcoin/network/channel_loader_module.hpp>
-#include <bitcoin/bitcoin/network/shared_const_buffer.hpp>
-#include <bitcoin/bitcoin/primitives.hpp>
-#include <bitcoin/bitcoin/satoshi_serialize.hpp>
-#include <bitcoin/bitcoin/utility/assert.hpp>
-#include <bitcoin/bitcoin/utility/async_strand.hpp>
-#include <bitcoin/bitcoin/utility/data.hpp>
-#include <bitcoin/bitcoin/utility/endian.hpp>
-#include <bitcoin/bitcoin/utility/logger.hpp>
-#include <bitcoin/bitcoin/utility/random.hpp>
-#include <bitcoin/bitcoin/utility/serializer.hpp>
-#include <bitcoin/bitcoin/utility/string.hpp>
+#include <groestlcoin/groestlcoin/error.hpp>
+#include <groestlcoin/groestlcoin/math/checksum.hpp>
+#include <groestlcoin/groestlcoin/network/authority.hpp>
+#include <groestlcoin/groestlcoin/network/channel_loader_module.hpp>
+#include <groestlcoin/groestlcoin/network/shared_const_buffer.hpp>
+#include <groestlcoin/groestlcoin/primitives.hpp>
+#include <groestlcoin/groestlcoin/satoshi_serialize.hpp>
+#include <groestlcoin/groestlcoin/utility/assert.hpp>
+#include <groestlcoin/groestlcoin/utility/async_strand.hpp>
+#include <groestlcoin/groestlcoin/utility/data.hpp>
+#include <groestlcoin/groestlcoin/utility/endian.hpp>
+#include <groestlcoin/groestlcoin/utility/logger.hpp>
+#include <groestlcoin/groestlcoin/utility/random.hpp>
+#include <groestlcoin/groestlcoin/utility/serializer.hpp>
+#include <groestlcoin/groestlcoin/utility/string.hpp>
 
 namespace libbitcoin {
 namespace network {

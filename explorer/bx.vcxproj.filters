@@ -439,6 +439,15 @@
     <ClCompile Include="..\client\obelisk\obelisk_router.cpp">
       <Filter>Source Files\client\obelisk</Filter>
     </ClCompile>
+    <ClCompile Include="async_client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="callback_state.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\client\obelisk\obelisk_codec.cpp">
+      <Filter>Source Files\client\obelisk</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\address-decode.hpp">

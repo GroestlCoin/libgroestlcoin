@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#include <bitcoin/bitcoin/network/network.hpp>
+#include <groestlcoin/groestlcoin/network/network.hpp>
 
 #include <algorithm>
 #include <functional>
@@ -25,9 +25,9 @@
 #include <system_error>
 #include <boost/asio.hpp>
 #include <boost/date_time.hpp>
-#include <bitcoin/bitcoin/error.hpp>
-#include <bitcoin/bitcoin/network/channel.hpp>
-#include <bitcoin/bitcoin/utility/logger.hpp>
+#include <groestlcoin/groestlcoin/error.hpp>
+#include <groestlcoin/groestlcoin/network/channel.hpp>
+#include <groestlcoin/groestlcoin/utility/logger.hpp>
 #include "connect_with_timeout.hpp"
 
 namespace libbitcoin {

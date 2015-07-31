@@ -33,6 +33,15 @@
     <Filter Include="Source Files\network">
       <UniqueIdentifier>{0f3fc79d-54f1-40a8-89f1-819c42a68727}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\secp256k1">
+      <UniqueIdentifier>{8ae457da-2cd5-467f-83b6-3a7056141f67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\math\external">
+      <UniqueIdentifier>{a737e6ed-e624-4b41-ab98-e8151437d429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\config">
+      <UniqueIdentifier>{70e8f7dd-370b-4b6e-90fb-77fb25de2887}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="math\checksum.cpp">
@@ -123,6 +132,84 @@
       <Filter>Source Files\wallet</Filter>
     </ClCompile>
     <ClCompile Include="utility\string.cpp">
+      <Filter>Source Files\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="network\channel_proxy.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\seeder.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\authority.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FOREIGN\secp256k1\secp256k1.c">
+      <Filter>Source Files\secp256k1</Filter>
+    </ClCompile>
+    <ClCompile Include="math\external\hmac_sha256.c">
+      <Filter>Source Files\math\external</Filter>
+    </ClCompile>
+    <ClCompile Include="network\handshake.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\acceptor.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\channel_stream_loader.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="math\external\ripemd160.c">
+      <Filter>Source Files\math\external</Filter>
+    </ClCompile>
+    <ClCompile Include="math\external\sha512.c">
+      <Filter>Source Files\math\external</Filter>
+    </ClCompile>
+    <ClCompile Include="math\external\sha256.c">
+      <Filter>Source Files\math\external</Filter>
+    </ClCompile>
+    <ClCompile Include="block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="math\hash_number.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="transaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="network\network.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\threadpool.cpp">
+      <Filter>Source Files\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="math\external\hmac_sha512.c">
+      <Filter>Source Files\math\external</Filter>
+    </ClCompile>
+    <ClCompile Include="config\printer.cpp">
+      <Filter>Source Files\config</Filter>
+    </ClCompile>
+    <ClCompile Include="error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wallet\mnemonic.cpp">
+      <Filter>Source Files\wallet</Filter>
+    </ClCompile>
+    <ClCompile Include="math\uint256.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="unicode\ifstream.cpp">
+      <Filter>Source Files\unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="math\secp256k1_initializer.cpp">
+      <Filter>Source Files\math</Filter>
+    </ClCompile>
+    <ClCompile Include="constants.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\async_strand.cpp">
+      <Filter>Source Files\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="utility\thread.cpp">
       <Filter>Source Files\utility</Filter>
     </ClCompile>
   </ItemGroup>

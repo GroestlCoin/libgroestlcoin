@@ -17,18 +17,18 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#include <bitcoin/bitcoin/wallet/mnemonic.hpp>
+#include <groestlcoin/groestlcoin/wallet/mnemonic.hpp>
 
 #include <algorithm>
 #include <cstdint>
 #include <boost/locale.hpp>
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/unicode/unicode.hpp>
-#include <bitcoin/bitcoin/utility/assert.hpp>
-#include <bitcoin/bitcoin/utility/binary.hpp>
-#include <bitcoin/bitcoin/utility/collection.hpp>
-#include <bitcoin/bitcoin/utility/string.hpp>
-#include <bitcoin/bitcoin/wallet/dictionary.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/unicode/unicode.hpp>
+#include <groestlcoin/groestlcoin/utility/assert.hpp>
+#include <groestlcoin/groestlcoin/utility/binary.hpp>
+#include <groestlcoin/groestlcoin/utility/collection.hpp>
+#include <groestlcoin/groestlcoin/utility/string.hpp>
+#include <groestlcoin/groestlcoin/wallet/dictionary.hpp>
 #include "../math/external/pkcs5_pbkdf2.h"
 
 namespace libbitcoin {
