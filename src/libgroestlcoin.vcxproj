@@ -202,6 +202,8 @@
       <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='R_St|x64'">libsecp256k1-config.h</ForcedIncludeFiles>
     </ClCompile>
     <ClCompile Include="block.cpp" />
+    <ClCompile Include="config\directory.cpp" />
+    <ClCompile Include="config\parameter.cpp" />
     <ClCompile Include="config\printer.cpp" />
     <ClCompile Include="constants.cpp" />
     <ClCompile Include="error.cpp" />
@@ -214,9 +216,12 @@
     <ClCompile Include="math\ec_keys.cpp" />
     <ClCompile Include="math\external\hmac_sha256.c" />
     <ClCompile Include="math\external\hmac_sha512.c" />
+    <ClCompile Include="math\external\pkcs5_pbkdf2.c" />
     <ClCompile Include="math\external\ripemd160.c" />
+    <ClCompile Include="math\external\sha1.c" />
     <ClCompile Include="math\external\sha256.c" />
     <ClCompile Include="math\external\sha512.c" />
+    <ClCompile Include="math\external\zeroize.c" />
     <ClCompile Include="math\hash.cpp" />
     <ClCompile Include="math\hash_number.cpp" />
     <ClCompile Include="math\script_number.cpp" />
@@ -227,6 +232,7 @@
     <ClCompile Include="network\channel.cpp" />
     <ClCompile Include="network\channel_proxy.cpp" />
     <ClCompile Include="network\channel_stream_loader.cpp" />
+    <ClCompile Include="network\connect_with_timeout.cpp" />
     <ClCompile Include="network\handshake.cpp" />
     <ClCompile Include="network\hosts.cpp" />
     <ClCompile Include="network\network.cpp" />
@@ -234,6 +240,7 @@
     <ClCompile Include="network\seeder.cpp" />
     <ClCompile Include="satoshi_serialize.cpp" />
     <ClCompile Include="script.cpp" />
+    <ClCompile Include="stealth.cpp" />
     <ClCompile Include="transaction.cpp" />
     <ClCompile Include="unicode\console_streambuf.cpp" />
     <ClCompile Include="unicode\ifstream.cpp" />
@@ -253,6 +260,7 @@
     <ClCompile Include="wallet\dictionary.cpp" />
     <ClCompile Include="wallet\hd_keys.cpp" />
     <ClCompile Include="wallet\key_formats.cpp" />
+    <ClCompile Include="wallet\message.cpp" />
     <ClCompile Include="wallet\mnemonic.cpp" />
     <ClCompile Include="wallet\stealth_address.cpp" />
     <ClCompile Include="wallet\uri.cpp" />

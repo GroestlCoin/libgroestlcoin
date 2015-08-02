@@ -16,11 +16,11 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#include <bitcoin/bitcoin/wallet/message.hpp>
+#include <groestlcoin/groestlcoin/wallet/message.hpp>
 
-#include <bitcoin/bitcoin/define.hpp>
-#include <bitcoin/bitcoin/utility/serializer.hpp>
-#include <bitcoin/bitcoin/wallet/key_formats.hpp>
+#include <groestlcoin/groestlcoin/define.hpp>
+#include <groestlcoin/groestlcoin/utility/serializer.hpp>
+#include <groestlcoin/groestlcoin/wallet/key_formats.hpp>
 
 namespace libbitcoin {
 

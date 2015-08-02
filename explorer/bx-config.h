@@ -28,7 +28,11 @@
 
 #define BOOST_ASIO_ERROR_CATEGORY_NOEXCEPT noexcept
 
+
+#define ZMQ_STATIC
+#define LIBCZMQ_STATIC
 #define LIBCZMQPP_STATIC
+
 
 #define BC_STATIC
 #define BCC_STATIC

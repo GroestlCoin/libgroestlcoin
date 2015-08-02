@@ -212,6 +212,30 @@
     <ClCompile Include="utility\thread.cpp">
       <Filter>Source Files\utility</Filter>
     </ClCompile>
+    <ClCompile Include="wallet\message.cpp">
+      <Filter>Source Files\wallet</Filter>
+    </ClCompile>
+    <ClCompile Include="math\external\zeroize.c">
+      <Filter>Source Files\math\external</Filter>
+    </ClCompile>
+    <ClCompile Include="network\connect_with_timeout.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="stealth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config\parameter.cpp">
+      <Filter>Source Files\config</Filter>
+    </ClCompile>
+    <ClCompile Include="math\external\sha1.c">
+      <Filter>Source Files\math\external</Filter>
+    </ClCompile>
+    <ClCompile Include="math\external\pkcs5_pbkdf2.c">
+      <Filter>Source Files\math\external</Filter>
+    </ClCompile>
+    <ClCompile Include="config\directory.cpp">
+      <Filter>Source Files\config</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="libgroestlcoin-config.h">

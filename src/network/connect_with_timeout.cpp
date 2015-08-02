@@ -24,12 +24,12 @@
 #include <system_error>
 #include <boost/asio.hpp>
 #include <boost/date_time.hpp>
-#include <bitcoin/bitcoin/error.hpp>
-#include <bitcoin/bitcoin/utility/assert.hpp>
-#include <bitcoin/bitcoin/network/channel.hpp>
-#include <bitcoin/bitcoin/network/channel_proxy.hpp>
-#include <bitcoin/bitcoin/network/network.hpp>
-#include <bitcoin/bitcoin/utility/threadpool.hpp>
+#include <groestlcoin/groestlcoin/error.hpp>
+#include <groestlcoin/groestlcoin/utility/assert.hpp>
+#include <groestlcoin/groestlcoin/network/channel.hpp>
+#include <groestlcoin/groestlcoin/network/channel_proxy.hpp>
+#include <groestlcoin/groestlcoin/network/network.hpp>
+#include <groestlcoin/groestlcoin/utility/threadpool.hpp>
 
 namespace libbitcoin {
 namespace network {
