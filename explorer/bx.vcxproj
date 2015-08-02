@@ -339,6 +339,17 @@
     <ClCompile Include="utility.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\groestlcoin\client\define.hpp" />
+    <ClInclude Include="..\include\groestlcoin\client\message_stream.hpp" />
+    <ClInclude Include="..\include\groestlcoin\client\obelisk\obelisk_codec.hpp" />
+    <ClInclude Include="..\include\groestlcoin\client\obelisk\obelisk_router.hpp" />
+    <ClInclude Include="..\include\groestlcoin\client\obelisk\obelisk_types.hpp" />
+    <ClInclude Include="..\include\groestlcoin\client\sleeper.hpp" />
+    <ClInclude Include="..\include\groestlcoin\client\socket_stream.hpp" />
+    <ClInclude Include="..\include\groestlcoin\client\version.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\async_client.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\callback_state.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\command.hpp" />
     <ClInclude Include="..\include\groestlcoin\explorer\commands\address-decode.hpp" />
     <ClInclude Include="..\include\groestlcoin\explorer\commands\address-embed.hpp" />
     <ClInclude Include="..\include\groestlcoin\explorer\commands\address-encode.hpp" />
@@ -437,7 +448,57 @@
     <ClInclude Include="..\include\groestlcoin\explorer\commands\wif-to-public.hpp" />
     <ClInclude Include="..\include\groestlcoin\explorer\commands\wrap-decode.hpp" />
     <ClInclude Include="..\include\groestlcoin\explorer\commands\wrap-encode.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\define.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\dispatch.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\display.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\generated.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\obelisk_client.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\address.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\base16.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\base2.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\base58.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\base64.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\base85.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\btc.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\btc160.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\btc256.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\byte.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\cert_key.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\ec_private.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\ec_public.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\encoding.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\endorsement.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\hashtype.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\hd_key.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\hd_priv.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\hd_pub.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\header.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\input.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\language.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\output.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\point.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\raw.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\script.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\signature.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\stealth.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\transaction.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\uri.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\wif.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\wrapper.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\prop_tree.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\utility.hpp" />
+    <ClInclude Include="..\include\groestlcoin\explorer\version.hpp" />
     <ClInclude Include="bx-config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\include\groestlcoin\client\random_number_generator.hpp.bak" />
+    <None Include="..\include\groestlcoin\client\request_stream.hpp.bak" />
+    <None Include="..\include\groestlcoin\client\response_stream.hpp.bak" />
+    <None Include="..\include\groestlcoin\client\server_codec.hpp.bak" />
+    <None Include="..\include\groestlcoin\client\server_codec_impl.hpp.bak" />
+    <None Include="..\include\groestlcoin\client\uniform_uint32_generator.hpp.bak" />
+    <None Include="..\include\groestlcoin\explorer\impl\prop_tree.ipp" />
+    <None Include="..\include\groestlcoin\explorer\impl\utility.ipp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

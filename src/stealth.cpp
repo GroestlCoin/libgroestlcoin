@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2013 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2013 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -22,12 +22,12 @@
 #include <groestlcoin/groestlcoin/math/hash.hpp>
 #include <groestlcoin/groestlcoin/utility/assert.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 binary_type calculate_stealth_prefix(const script_type& stealth_script)
 {
     const auto stealth_data = save_script(stealth_script);
-    const auto index = bitcoin_hash(stealth_data);
+    const auto index = groestlcoin_hash(stealth_data);
     const auto bitsize = binary_type::bits_per_block * sizeof(uint32_t);
     return binary_type(bitsize, index);
 }
@@ -79,5 +79,5 @@ ec_secret uncover_stealth_secret(const ec_point& pubkey,
     return final;
 }
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 

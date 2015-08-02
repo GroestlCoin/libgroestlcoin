@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2014 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2014 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -17,15 +17,15 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_BASE10_HPP
-#define LIBBITCOIN_BASE10_HPP
+#ifndef LIBGROESTLCOIN_BASE10_HPP
+#define LIBGROESTLCOIN_BASE10_HPP
 
 #include <cstdint>
 #include <string>
 #include <groestlcoin/groestlcoin/compat.hpp>
 #include <groestlcoin/groestlcoin/define.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 BC_CONSTEXPR uint8_t btc_decimal_places = 8;
 BC_CONSTEXPR uint8_t mbtc_decimal_places = 5;
@@ -55,7 +55,7 @@ BC_API std::string encode_base10(uint64_t amount,
 BC_API bool btc_to_satoshi(uint64_t& satoshi, const std::string& btc);
 BC_API std::string satoshi_to_btc(uint64_t satoshi);
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif
 

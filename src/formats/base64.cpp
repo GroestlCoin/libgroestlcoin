@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2014 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2014 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -26,7 +26,7 @@
 // This implementation derived from public domain:
 // en.wikibooks.org/wiki/Algorithm_Implementation/Miscellaneous/Base64
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 const static char pad = '=';
 
@@ -148,5 +148,5 @@ bool decode_base64(data_chunk& out, const std::string& in)
     return true;
 }
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 

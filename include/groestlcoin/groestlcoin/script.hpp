@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2013 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2013 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -17,8 +17,8 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_SCRIPT_HPP
-#define LIBBITCOIN_SCRIPT_HPP
+#ifndef LIBGROESTLCOIN_SCRIPT_HPP
+#define LIBGROESTLCOIN_SCRIPT_HPP
 
 #include <cstddef>
 #include <cstdint>
@@ -28,7 +28,7 @@
 #include <groestlcoin/groestlcoin/math/ec_keys.hpp>
 #include <groestlcoin/groestlcoin/utility/data.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 struct transaction_type;
 
@@ -321,7 +321,7 @@ BC_API bool create_signature(data_chunk& signature,
     const transaction_type& tx, uint32_t input_index, uint32_t hash_type,
     const ec_secret& nonce);
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif
 

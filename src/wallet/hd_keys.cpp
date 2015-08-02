@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2013 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2013 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
  * published by the Free Software Foundation, either version 3 of the
  * License, or (at your option) any later version.
@@ -28,7 +28,7 @@
 #include <groestlcoin/groestlcoin/utility/serializer.hpp>
 #include <groestlcoin/groestlcoin/wallet/address.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 constexpr uint32_t mainnet_private_prefix = 0x0488ADE4;
 constexpr uint32_t mainnet_public_prefix = 0x0488B21E;
@@ -36,7 +36,7 @@ constexpr uint32_t testnet_private_prefix = 0x04358394;
 constexpr uint32_t testnet_public_prefix = 0x043587CF;
 constexpr size_t serialized_length = 4 + 1 + 4 + 4 + 32 + 33 + 4;
 
-// long_hash is used for hmac_sha512 in libbitcoin
+// long_hash is used for hmac_sha512 in libgroestlcoin
 constexpr size_t half_long_hash_size = long_hash_size / 2;
 typedef byte_array<half_long_hash_size> half_long_hash;
 
@@ -277,5 +277,5 @@ hd_public_key hd_private_key::generate_public_key(uint32_t i) const
     return generate_private_key(i);
 }
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 

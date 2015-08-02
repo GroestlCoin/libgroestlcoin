@@ -30,12 +30,12 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#ifndef LIBBITCOIN_BINARY_TRIE_IPP
-#define LIBBITCOIN_BINARY_TRIE_IPP
+#ifndef LIBGROESTLCOIN_BINARY_TRIE_IPP
+#define LIBGROESTLCOIN_BINARY_TRIE_IPP
 
 #include <new>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 // binary_trie implementation
 template<typename Value, typename StructureNodeAllocator,
@@ -994,6 +994,6 @@ typename binary_trie<Value, StructureNodeAllocator, ValueNodeAllocator,
     return (next == nullptr) ? (iterator)(anchor->next) : (iterator)next;
 }
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif

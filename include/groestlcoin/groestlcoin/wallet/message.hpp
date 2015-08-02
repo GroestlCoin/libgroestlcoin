@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2014 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2014 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
  * published by the Free Software Foundation, either version 3 of the
  * License, or (at your option) any later version.
@@ -16,8 +16,8 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_MESSAGE_HPP
-#define LIBBITCOIN_MESSAGE_HPP
+#ifndef LIBGROESTLCOIN_MESSAGE_HPP
+#define LIBGROESTLCOIN_MESSAGE_HPP
 
 #include <string>
 #include <groestlcoin/groestlcoin/compat.hpp>
@@ -26,7 +26,7 @@
 #include <groestlcoin/groestlcoin/math/hash.hpp>
 #include <groestlcoin/groestlcoin/wallet/address.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 BC_CONSTEXPR size_t message_signature_size = 65;
 typedef byte_array<message_signature_size> message_signature;
@@ -67,7 +67,7 @@ BC_API message_signature sign_message(data_slice message,
 BC_API bool verify_message(data_slice message,
     const payment_address& address, const message_signature& signature);
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif
 

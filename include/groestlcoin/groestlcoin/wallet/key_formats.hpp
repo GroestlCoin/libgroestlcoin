@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2013 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2013 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
  * published by the Free Software Foundation, either version 3 of the
  * License, or (at your option) any later version.
@@ -16,14 +16,14 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_KEY_FORMATS_HPP
-#define LIBBITCOIN_KEY_FORMATS_HPP
+#ifndef LIBGROESTLCOIN_KEY_FORMATS_HPP
+#define LIBGROESTLCOIN_KEY_FORMATS_HPP
 
 #include <string>
 #include <groestlcoin/groestlcoin/define.hpp>
 #include <groestlcoin/groestlcoin/math/ec_keys.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 /**
  * Convert a secret parameter to the wallet import format.
@@ -79,7 +79,7 @@ BC_API bool is_wif_compressed(const std::string& wif);
  */
 BC_API ec_secret minikey_to_secret(const std::string& minikey);
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif
 

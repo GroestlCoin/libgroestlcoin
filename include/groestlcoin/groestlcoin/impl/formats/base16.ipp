@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2014 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2014 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -17,12 +17,12 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_BASE16_IPP
-#define LIBBITCOIN_BASE16_IPP
+#ifndef LIBGROESTLCOIN_BASE16_IPP
+#define LIBGROESTLCOIN_BASE16_IPP
 
 #include <groestlcoin/groestlcoin/utility/assert.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 /**
  * This is a private helper function, so please do not use it.
@@ -54,7 +54,7 @@ byte_array<(Size - 1) / 2> base16_literal(const char (&string)[Size])
     return out;
 }
 
-} // libbitcoin
+} // libgroestlcoin
 
 #endif
 

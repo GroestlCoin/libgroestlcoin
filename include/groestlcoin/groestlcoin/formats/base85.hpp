@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2015 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2015 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -17,14 +17,14 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_BASE85_HPP
-#define LIBBITCOIN_BASE85_HPP
+#ifndef LIBGROESTLCOIN_BASE85_HPP
+#define LIBGROESTLCOIN_BASE85_HPP
 
 #include <string>
 #include <groestlcoin/groestlcoin/define.hpp>
 #include <groestlcoin/groestlcoin/utility/data.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 /**
  * Encode data as base85 (Z85).
@@ -38,6 +38,6 @@ BC_API bool encode_base85(std::string& out, data_slice in);
  */
 BC_API bool decode_base85(data_chunk& out, const std::string& in);
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif

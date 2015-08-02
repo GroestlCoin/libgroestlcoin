@@ -1,9 +1,9 @@
 /**
- * Copyright (c) 2011-2015 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2015 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin-explorer.
+ * This file is part of libgroestlcoin-explorer.
  *
- * libbitcoin-explorer is free software: you can redistribute it and/or
+ * libgroestlcoin-explorer is free software: you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -63,7 +63,7 @@
 
 /********* GENERATED SOURCE CODE, DO NOT EDIT EXCEPT EXPERIMENTALLY **********/
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 namespace explorer {
 
 #define BX_CONFIG_VARIABLE "config"
@@ -76,12 +76,12 @@ static boost::filesystem::path default_config_path()
     const auto directory = config::windows_config_directory();
 #else
     // SYSCONFDIR must be defined at compile for this project, so do not move
-    // this definition into libbitcoin.
+    // this definition into libgroestlcoin.
     const auto directory = std::string(SYSCONFDIR);
 #endif
     // This subdirectory and file name must stay in sync with the path for the
     // configuration file distributed via the build.
-    return boost::filesystem::path(directory) / "libbitcoin" / "bx.cfg";
+    return boost::filesystem::path(directory) / "libgroestlcoin" / "bx.cfg";
 }
 
 /**
@@ -601,6 +601,6 @@ private:
 };
 
 } // namespace explorer
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif

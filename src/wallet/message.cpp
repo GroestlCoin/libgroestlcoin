@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2014 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2014 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
  * published by the Free Software Foundation, either version 3 of the
  * License, or (at your option) any later version.
@@ -22,7 +22,7 @@
 #include <groestlcoin/groestlcoin/utility/serializer.hpp>
 #include <groestlcoin/groestlcoin/wallet/key_formats.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 hash_digest hash_message(data_slice message)
 {
@@ -37,7 +37,7 @@ hash_digest hash_message(data_slice message)
     ser.write_variable_uint(message.size());
     ser.write_data(message);
 
-    return bitcoin_hash(data);
+    return groestlcoin_hash(data);
 }
 
 // This is convenient thought not as efficient as the other override.
@@ -94,5 +94,5 @@ bool verify_message(data_slice message,
     return address.hash() == bitcoin_short_hash(pubkey);
 }
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 

@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2013 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2013 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -17,14 +17,14 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_SHARED_CONST_BUFFER_HPP
-#define LIBBITCOIN_SHARED_CONST_BUFFER_HPP
+#ifndef LIBGROESTLCOIN_SHARED_CONST_BUFFER_HPP
+#define LIBGROESTLCOIN_SHARED_CONST_BUFFER_HPP
 
 #include <memory>
 #include <boost/asio.hpp>
 #include <groestlcoin/groestlcoin/utility/data.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 namespace network {
 
 // TODO: split into cpp file.
@@ -59,7 +59,7 @@ private:
 };
 
 } // namespace network
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif
 

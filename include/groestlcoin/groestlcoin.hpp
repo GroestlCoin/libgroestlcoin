@@ -1,11 +1,11 @@
 ///////////////////////////////////////////////////////////////////////////////
-// Copyright (c) 2014-2015 libbitcoin developers (see COPYING).
+// Copyright (c) 2014-2015 libgroestlcoin developers (see COPYING).
 //
 //        GENERATED SOURCE CODE, DO NOT EDIT EXCEPT EXPERIMENTALLY
 //
 ///////////////////////////////////////////////////////////////////////////////
-#ifndef LIBBITCOIN_BITCOIN_HPP
-#define LIBBITCOIN_BITCOIN_HPP
+#ifndef LIBGROESTLCOIN_BITCOIN_HPP
+#define LIBGROESTLCOIN_BITCOIN_HPP
 
 /**
  * API Users: Include only this header. Direct use of other headers is fragile 

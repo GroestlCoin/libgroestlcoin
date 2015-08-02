@@ -30,14 +30,14 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#ifndef LIBBITCOIN_TRIE_STRUCTURE_NODE_HPP
-#define LIBBITCOIN_TRIE_STRUCTURE_NODE_HPP
+#ifndef LIBGROESTLCOIN_TRIE_STRUCTURE_NODE_HPP
+#define LIBGROESTLCOIN_TRIE_STRUCTURE_NODE_HPP
 
 #include <boost/utility.hpp>
 #include <groestlcoin/groestlcoin/trie/trie_value_node.hpp>
 #include <groestlcoin/groestlcoin/utility/binary.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 template <typename Value>
 class trie_structure_node : private boost::noncopyable
@@ -83,7 +83,7 @@ private:
 
 };
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #include <groestlcoin/groestlcoin/impl/trie/trie_structure_node.ipp>
 

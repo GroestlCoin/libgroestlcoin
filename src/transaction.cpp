@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2013 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2013 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -32,7 +32,7 @@
 #include <groestlcoin/groestlcoin/utility/logger.hpp>
 #include <groestlcoin/groestlcoin/utility/serializer.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 hash_digest hash_transaction_impl(const transaction_type& tx,
     uint32_t* hash_type_code)
@@ -41,7 +41,7 @@ hash_digest hash_transaction_impl(const transaction_type& tx,
     satoshi_save(tx, serialized_tx.begin());
     if (hash_type_code != nullptr)
         extend_data(serialized_tx, to_little_endian(*hash_type_code));
-    return bitcoin_hash(serialized_tx);
+    return HashFromTx(serialized_tx);
 }
 
 hash_digest hash_transaction(const transaction_type& tx)
@@ -87,7 +87,7 @@ hash_digest build_merkle_tree(hash_list& merkle)
             BITCOIN_ASSERT(concat.iterator() == concat_data.end());
 
             // Hash both of the hashes.
-            const auto new_root = bitcoin_hash(concat_data);
+            const auto new_root = SHA256_SHA256(concat_data);
 
             // Add this to the new list.
             new_merkle.push_back(new_root);
@@ -275,5 +275,5 @@ bool operator!=(const output_point& output_a, const output_point& output_b)
     return !(output_a == output_b);
 }
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 

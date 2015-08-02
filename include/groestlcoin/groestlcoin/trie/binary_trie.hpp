@@ -30,8 +30,8 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#ifndef LIBBITCOIN_BINARY_TRIE_HPP
-#define LIBBITCOIN_BINARY_TRIE_HPP
+#ifndef LIBGROESTLCOIN_BINARY_TRIE_HPP
+#define LIBGROESTLCOIN_BINARY_TRIE_HPP
 
 #include <memory>
 #include <boost/interprocess/allocators/allocator.hpp>
@@ -42,7 +42,7 @@
 #include <groestlcoin/groestlcoin/trie/trie_value_node.hpp>
 #include <groestlcoin/groestlcoin/utility/binary.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 template<typename Value, typename StructureNodeAllocator = std::allocator<
     trie_structure_node<Value>>, typename ValueNodeAllocator = std::allocator<
@@ -203,7 +203,7 @@ private:
     structure_node_type* root_;
 };
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #include <groestlcoin/groestlcoin/impl/trie/binary_trie.ipp>
 

@@ -8,9 +8,6 @@
     <Filter Include="Header Files">
       <UniqueIdentifier>{a6c77ede-7ac0-4f25-b7c3-1ea952565079}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\commands">
-      <UniqueIdentifier>{04e8ca51-1257-4867-830b-f18897fd1505}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\primitives">
       <UniqueIdentifier>{cf1a920e-8203-4266-ba1a-d98c795bdd4c}</UniqueIdentifier>
     </Filter>
@@ -22,6 +19,24 @@
     </Filter>
     <Filter Include="Source Files\client\obelisk">
       <UniqueIdentifier>{35b4a822-435d-4b3d-9376-5cab0feb2912}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\explorer">
+      <UniqueIdentifier>{3a80ba0b-27a2-4d46-98f4-62b1e5bdb3c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\explorer\primitives">
+      <UniqueIdentifier>{9ea04cb1-712a-49ae-adaa-8b692d24bac4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\explorer\commands">
+      <UniqueIdentifier>{04e8ca51-1257-4867-830b-f18897fd1505}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\client">
+      <UniqueIdentifier>{43c3dcb5-33d2-4bff-8e9c-322b60f5ca16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\client\obelisk">
+      <UniqueIdentifier>{5bed854d-a14a-4a60-9eee-fa60fcd81449}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\explorer\impl">
+      <UniqueIdentifier>{02300131-eca9-4bdc-804f-dca03177fa97}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -454,301 +469,480 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\address-decode.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\address-embed.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\address-encode.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\address-validate.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\base16-decode.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\base16-encode.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\base58check-decode.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\base58check-encode.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\base58-decode.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\base58-encode.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\base64-decode.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\base64-encode.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\bci-fetch-last-height.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\bci-history.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\bitcoin160.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\bitcoin256.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\blke-fetch-transaction.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\btc-to-satoshi.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\cert-new.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\cert-public.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\ec-add.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\ec-add-secrets.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\ec-lock.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\ec-multiply.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\ec-multiply-secrets.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\ec-new.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\ec-to-address.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\ec-to-public.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\ec-to-wif.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\ec-unlock.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\fetch-balance.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\fetch-header.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\fetch-height.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\fetch-history.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\fetch-public-key.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\fetch-stealth.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\fetch-tx.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\fetch-tx-index.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\fetch-utxo.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\genaddr.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\genpriv.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\genpub.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\hd-new.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\hd-private.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\hd-public.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\hd-to-address.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\hd-to-ec.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\hd-to-public.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\hd-to-wif.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\help.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\initchain.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\input-set.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\input-sign.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\input-validate.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\message-sign.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\message-validate.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\mnemonic-decode.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\mnemonic-encode.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\mnemonic-new.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\mnemonic-to-seed.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\mpk.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\newseed.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\qrcode.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\ripemd160.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\satoshi-to-btc.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\script-decode.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\script-encode.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\script-to-address.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\seed.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\send-tx.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\sendtx-bci.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\send-tx-node.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\send-tx-p2p.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\settings.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\sha160.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\sha256.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\sha512.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\showblkhead.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\stealth-decode.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\stealth-encode.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\stealth-initiate.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\stealth-newkey.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\stealth-public.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\stealth-secret.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\stealth-shared.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\tx-decode.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\tx-encode.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\tx-sign.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\uri-decode.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\uri-encode.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\validate-tx.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\wallet.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\watch-address.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\watch-tx.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\wif-to-ec.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\wif-to-public.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\wrap-decode.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="..\include\groestlcoin\explorer\commands\wrap-encode.hpp">
-      <Filter>Header Files\commands</Filter>
+      <Filter>Header Files\explorer\commands</Filter>
     </ClInclude>
     <ClInclude Include="bx-config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\client\define.hpp">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\client\message_stream.hpp">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\client\sleeper.hpp">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\client\socket_stream.hpp">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\client\version.hpp">
+      <Filter>Header Files\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\client\obelisk\obelisk_codec.hpp">
+      <Filter>Header Files\client\obelisk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\client\obelisk\obelisk_router.hpp">
+      <Filter>Header Files\client\obelisk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\client\obelisk\obelisk_types.hpp">
+      <Filter>Header Files\client\obelisk</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\address.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\base2.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\base16.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\base58.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\base64.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\base85.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\btc.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\btc160.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\btc256.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\byte.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\cert_key.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\ec_private.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\ec_public.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\encoding.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\endorsement.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\hashtype.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\hd_key.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\hd_priv.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\hd_pub.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\header.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\input.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\language.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\output.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\point.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\raw.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\script.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\signature.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\stealth.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\transaction.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\uri.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\wif.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\primitives\wrapper.hpp">
+      <Filter>Header Files\explorer\primitives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\async_client.hpp">
+      <Filter>Header Files\explorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\callback_state.hpp">
+      <Filter>Header Files\explorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\command.hpp">
+      <Filter>Header Files\explorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\define.hpp">
+      <Filter>Header Files\explorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\dispatch.hpp">
+      <Filter>Header Files\explorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\display.hpp">
+      <Filter>Header Files\explorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\generated.hpp">
+      <Filter>Header Files\explorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\obelisk_client.hpp">
+      <Filter>Header Files\explorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\prop_tree.hpp">
+      <Filter>Header Files\explorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\utility.hpp">
+      <Filter>Header Files\explorer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\explorer\version.hpp">
+      <Filter>Header Files\explorer</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\include\groestlcoin\client\random_number_generator.hpp.bak">
+      <Filter>Header Files\client</Filter>
+    </None>
+    <None Include="..\include\groestlcoin\client\request_stream.hpp.bak">
+      <Filter>Header Files\client</Filter>
+    </None>
+    <None Include="..\include\groestlcoin\client\response_stream.hpp.bak">
+      <Filter>Header Files\client</Filter>
+    </None>
+    <None Include="..\include\groestlcoin\client\server_codec.hpp.bak">
+      <Filter>Header Files\client</Filter>
+    </None>
+    <None Include="..\include\groestlcoin\client\server_codec_impl.hpp.bak">
+      <Filter>Header Files\client</Filter>
+    </None>
+    <None Include="..\include\groestlcoin\client\uniform_uint32_generator.hpp.bak">
+      <Filter>Header Files\client</Filter>
+    </None>
+    <None Include="..\include\groestlcoin\explorer\impl\prop_tree.ipp">
+      <Filter>Header Files\explorer\impl</Filter>
+    </None>
+    <None Include="..\include\groestlcoin\explorer\impl\utility.ipp">
+      <Filter>Header Files\explorer\impl</Filter>
+    </None>
   </ItemGroup>
 </Project>

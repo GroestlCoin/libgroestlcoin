@@ -1,9 +1,9 @@
 /**
- * Copyright (c) 2011-2013 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2013 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -39,7 +39,7 @@
     #include <io.h>
 #endif
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 using namespace boost::locale;
 
@@ -388,4 +388,4 @@ void set_binary_stdout()
 
 LCOV_EXCL_STOP()
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin

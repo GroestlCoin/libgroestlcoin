@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2013 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2013 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
  * published by the Free Software Foundation, either version 3 of the
  * License, or (at your option) any later version.
@@ -28,7 +28,7 @@
 #include <groestlcoin/groestlcoin/utility/endian.hpp>
 #include <groestlcoin/groestlcoin/wallet/address.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 std::string secret_to_wif(const ec_secret& secret, bool compressed)
 {
@@ -95,5 +95,5 @@ ec_secret minikey_to_secret(const std::string& minikey)
     return sha256_hash(to_data_chunk(minikey));
 }
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 

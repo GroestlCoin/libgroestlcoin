@@ -1,9 +1,9 @@
 /**
- * Copyright (c) 2011-2018 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2018 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -17,8 +17,8 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_CHANNEL_PROXY_HPP
-#define LIBBITCOIN_CHANNEL_PROXY_HPP
+#ifndef LIBGROESTLCOIN_CHANNEL_PROXY_HPP
+#define LIBGROESTLCOIN_CHANNEL_PROXY_HPP
 
 #include <atomic>
 #include <cstddef>
@@ -44,7 +44,7 @@
 #include <groestlcoin/groestlcoin/utility/threadpool.hpp>
 #include <groestlcoin/groestlcoin/utility/subscriber.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 namespace network {
 
 // List of bitcoin messages
@@ -81,7 +81,7 @@ data_chunk create_raw_message(const Message& packet)
     header.magic = magic_value();
     header.command = satoshi_command(packet);
     header.payload_length = static_cast<uint32_t>(payload.size());
-    header.checksum = bitcoin_checksum(payload);
+    header.checksum = groestlcoin_checksum(payload);
     data_chunk raw_header(satoshi_raw_size(header));
     satoshi_save(header, raw_header.begin());
 
@@ -269,7 +269,7 @@ private:
 };
 
 } // namespace network
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif
 

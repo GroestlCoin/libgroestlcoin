@@ -1,9 +1,9 @@
 /**
- * Copyright (c) 2011-2015 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2015 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin-client.
+ * This file is part of libgroestlcoin-client.
  *
- * libbitcoin-client is free software: you can redistribute it and/or
+ * libgroestlcoin-client is free software: you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -25,7 +25,7 @@
 #include <groestlcoin/client/obelisk/obelisk_router.hpp>
 #include <groestlcoin/client/obelisk/obelisk_types.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 namespace client {
 
 /**
@@ -131,7 +131,7 @@ private:
 };
 
 } // namespace client
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif
 

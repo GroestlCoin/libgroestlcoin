@@ -30,10 +30,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#ifndef LIBBITCOIN_TRIE_ITERATOR_IPP
-#define LIBBITCOIN_TRIE_ITERATOR_IPP
+#ifndef LIBGROESTLCOIN_TRIE_ITERATOR_IPP
+#define LIBGROESTLCOIN_TRIE_ITERATOR_IPP
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 // trie_iterator implementation
 template<typename Value, typename Reference, typename Pointer>
@@ -195,6 +195,6 @@ binary_type trie_iterator<Value, Reference, Pointer>::get_key()
     return cached_key_;
 }
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif

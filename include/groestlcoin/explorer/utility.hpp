@@ -1,9 +1,9 @@
 /**
- * Copyright (c) 2011-2015 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2015 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin-explorer.
+ * This file is part of libgroestlcoin-explorer.
  *
- * libbitcoin-explorer is free software: you can redistribute it and/or
+ * libgroestlcoin-explorer is free software: you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -45,7 +45,7 @@
 
 /* NOTE: don't declare 'using namespace foo' in headers. */
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 namespace explorer {
 
 /**
@@ -247,7 +247,7 @@ BCX_API std::vector<std::string> numbers_to_strings(const index_list& indexes);
 BCX_API boost::posix_time::ptime now();
 
 /**
- * DEPRECATED in favor of libbitcoin::pseudo_random_fill.
+ * DEPRECATED in favor of libgroestlcoin::pseudo_random_fill.
  * Fill a buffer with randomness using the default random engine.
  * @param[in]  chunk  The buffer to fill with randomness.
  */
@@ -316,7 +316,7 @@ BCX_API std::ostream& write_stream(std::ostream& output, const pt::ptree& tree,
     encoding_engine engine=encoding_engine::info);
 
 } // namespace explorer
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #include <groestlcoin/explorer/impl/utility.ipp>
 

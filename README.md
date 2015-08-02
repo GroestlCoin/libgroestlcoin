@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/libbitcoin/libbitcoin.svg?branch=master)](https://travis-ci.org/libbitcoin/libbitcoin)
+[![Build Status](https://travis-ci.org/libgroestlcoin/libgroestlcoin.svg?branch=master)](https://travis-ci.org/libgroestlcoin/libgroestlcoin)
 
-[![Coverage Status](https://coveralls.io/repos/libbitcoin/libbitcoin/badge.svg)](https://coveralls.io/r/libbitcoin/libbitcoin)
+[![Coverage Status](https://coveralls.io/repos/libgroestlcoin/libgroestlcoin/badge.svg)](https://coveralls.io/r/libgroestlcoin/libgroestlcoin)
 
 # Libbitcoin
 
@@ -12,11 +12,11 @@ All files in this repository fall under the license specified in [COPYING](COPYI
 
 **About Libbitcoin**
 
-The libbitcoin toolkit is a set of cross platform C++ libraries for building bitcoin applications. The toolkit consists of several libraries, most of which depend on the foundational [libbitcoin](https://github.com/libbitcoin/libbitcoin) library. Each library's repository can be cloned and built using common [automake](http://www.gnu.org/software/automake) instructions. There are no packages yet in distribution however each library includes an installation script (described below) which is regularly verified in the automated build.
+The libgroestlcoin toolkit is a set of cross platform C++ libraries for building bitcoin applications. The toolkit consists of several libraries, most of which depend on the foundational [libgroestlcoin](https://github.com/groestlcoin/libgroestlcoin) library. Each library's repository can be cloned and built using common [automake](http://www.gnu.org/software/automake) instructions. There are no packages yet in distribution however each library includes an installation script (described below) which is regularly verified in the automated build.
 
 ## Installation
 
-On Linux and Macintosh libbitcoin is built using Autotools as follows.
+On Linux and Macintosh libgroestlcoin is built using Autotools as follows.
 ```sh
 $ ./autogen.sh
 $ ./configure
@@ -59,12 +59,12 @@ Next install the [Boost](http://www.boost.org) (minimum 1.55.0 for GCC or 1.54.0
 ```sh
 $ sudo apt-get install libboost-all-dev
 ```
-Next download the [install script](https://github.com/libbitcoin/libbitcoin/blob/version2/install.sh) and enable execution:
+Next download the [install script](https://github.com/groestlcoin/libgroestlcoin/blob/version2/install.sh) and enable execution:
 ```sh
-$ wget https://raw.githubusercontent.com/libbitcoin/libbitcoin/version2/install.sh
+$ wget https://raw.githubusercontent.com/libgroestlcoin/libgroestlcoin/version2/install.sh
 $ chmod +x install.sh
 ```
-Finally, install libbitcoin:
+Finally, install libgroestlcoin:
 ```sh
 $ sudo ./install.sh
 ```
@@ -106,12 +106,12 @@ Next install the [Boost](http://www.boost.org) (1.54.0 or newer) development pac
 ```sh
 $ brew install boost
 ```
-Next download the [install script](https://github.com/libbitcoin/libbitcoin/blob/version2/install.sh) and enable execution:
+Next download the [install script](https://github.com/libgroestlcoin/libgroestlcoin/blob/version2/install.sh) and enable execution:
 ```sh
-$ wget https://raw.githubusercontent.com/libbitcoin/libbitcoin/version2/install.sh
+$ wget https://raw.githubusercontent.com/libgroestlcoin/libgroestlcoin/version2/install.sh
 $ chmod +x install.sh
 ```
-Finally install libbitcoin:
+Finally install libgroestlcoin:
 ```sh
 $ ./install.sh
 ```
@@ -129,12 +129,12 @@ Next install the [Boost](http://www.boost.org) (1.54.0 or newer) development pac
 ```sh
 $ sudo port install boost -no_single -no_static -python27
 ```
-Next download the [install script](https://github.com/libbitcoin/libbitcoin/blob/version2/install.sh) and enable execution:
+Next download the [install script](https://github.com/libgroestlcoin/libgroestlcoin/blob/version2/install.sh) and enable execution:
 ```sh
-$ wget https://raw.githubusercontent.com/libbitcoin/libbitcoin/version2/install.sh
+$ wget https://raw.githubusercontent.com/libgroestlcoin/libgroestlcoin/version2/install.sh
 $ chmod +x install.sh
 ```
-Finally install libbitcoin:
+Finally install libgroestlcoin:
 ```sh
 $ ./install.sh
 ```
@@ -144,12 +144,12 @@ Libbitcoin is now installed in `/usr/local/`.
 
 The install script itself is commented so that the manual build steps for each dependency can be inferred by a developer.
 
-You can run the install script from any directory on your system. By default this will build libbitcoin in a subdirectory named `build-libbitcoin` and install it to `/usr/local/`. The install script requires `sudo` only if you do not have access to the installation location, which you can change using the `--prefix` option on the installer command line.
+You can run the install script from any directory on your system. By default this will build libgroestlcoin in a subdirectory named `build-libgroestlcoin` and install it to `/usr/local/`. The install script requires `sudo` only if you do not have access to the installation location, which you can change using the `--prefix` option on the installer command line.
 
 The build script clones, builds and installs two unpackaged repositories, namely:
 
-- [libbitcoin/secp256k1](https://github.com/libbitcoin/secp256k1)
-- [libbitcoin/libbitcoin](https://github.com/libbitcoin/libbitcoin)
+- [libgroestlcoin/secp256k1](https://github.com/libgroestlcoin/secp256k1)
+- [libgroestlcoin/libgroestlcoin](https://github.com/libgroestlcoin/libgroestlcoin)
 
 The script builds from the head of their `version3` and `version2` branches respectively. The `master` branch is a staging area for changes. The version branches are considered release quality.
 
@@ -162,14 +162,14 @@ $ ./install.sh CFLAGS="-Og -g" --prefix=/home/me/myprefix
 
 #### Compiling for Testnet
 
-Currently libbitcoin cannot work with both [testnet](https://en.bitcoin.it/wiki/Testnet) and mainnet. This restriction will be lifted in a future version. In order to work with testnet in the interim libbitcoin must be recompiled with the testnet option:
+Currently libgroestlcoin cannot work with both [testnet](https://en.bitcoin.it/wiki/Testnet) and mainnet. This restriction will be lifted in a future version. In order to work with testnet in the interim libgroestlcoin must be recompiled with the testnet option:
 ```sh
 $ ./install.sh --enable-testnet
 ```
 
 #### Compiling with ICU (International Components for Unicode)
 
-Since the addition of [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) support, libbitcoin conditionally incorporates [ICU](http://site.icu-project.org). To use the BIP-39 passphrase normalization feature libbitcoin must be compiled with ICU support. Currently [libbitcoin-explorer] is the only other library that accesses this feautre, so if you do not intend to use passphrase normalization ICU can be avoided:
+Since the addition of [BIP-39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) support, libgroestlcoin conditionally incorporates [ICU](http://site.icu-project.org). To use the BIP-39 passphrase normalization feature libgroestlcoin must be compiled with ICU support. Currently [libgroestlcoin-explorer] is the only other library that accesses this feautre, so if you do not intend to use passphrase normalization ICU can be avoided:
 ```sh
 $ ./install.sh --with-icu
 ```
@@ -183,9 +183,9 @@ $ ./install.sh --with-icu --build-icu --build-boost --prefix=/home/me/myprefix
 
 ### Windows
 
-Visual Studio solutions are maintained for all libbitcoin libraries and dependencies.
+Visual Studio solutions are maintained for all libgroestlcoin libraries and dependencies.
 
-> The libbitcoin execution environment supports `Windows XP Service Pack 2` and newer.
+> The libgroestlcoin execution environment supports `Windows XP Service Pack 2` and newer.
 
 #### Upgrade Compiler
 
@@ -196,9 +196,9 @@ Libbitcoin requires a C++11 compiler, which means **Visual Studio 2013** minimum
 
 #### Create Local NuGet Repository
 
-Dependencies apart from the libbitcoin libraries are available as [NuGet packages](https://www.nuget.org/packages?q=evoskuil). The libbitcoin solution files are configured with references to these packages. To avoid redundancies these references expect a [NuGet.config](http://docs.nuget.org/docs/release-notes/nuget-2.1) in a central location.
+Dependencies apart from the libgroestlcoin libraries are available as [NuGet packages](https://www.nuget.org/packages?q=evoskuil). The libgroestlcoin solution files are configured with references to these packages. To avoid redundancies these references expect a [NuGet.config](http://docs.nuget.org/docs/release-notes/nuget-2.1) in a central location.
 
-The required set of NuGet packages can be viewed using the [NuGet package manager](http://docs.nuget.org/docs/start-here/managing-nuget-packages-using-the-dialog) from the libbitcoin solution. The NuGet package manager will automatically download missing packages, either from the build scripts or after prompting you in the Visual Studio environment. For your reference these are the required packages:
+The required set of NuGet packages can be viewed using the [NuGet package manager](http://docs.nuget.org/docs/start-here/managing-nuget-packages-using-the-dialog) from the libgroestlcoin solution. The NuGet package manager will automatically download missing packages, either from the build scripts or after prompting you in the Visual Studio environment. For your reference these are the required packages:
 
 * Packages maintained by [sergey.shandar](http://www.nuget.org/profiles/sergey.shandar)
  * [boost](http://www.nuget.org/packages/boost)
@@ -215,16 +215,16 @@ The required set of NuGet packages can be viewed using the [NuGet package manage
 
 #### Build Libbitcoin Projects
 
-After cloning the the repository the libbitcoin build can be performed manually (from within Visual Studio) or using the `buildall.bat` script provided in the `builds\msvc\build\` subdirectory. The scripts automatically download the required NuGet packages.
+After cloning the the repository the libgroestlcoin build can be performed manually (from within Visual Studio) or using the `buildall.bat` script provided in the `builds\msvc\build\` subdirectory. The scripts automatically download the required NuGet packages.
 
 > Tip: The `buildall.bat` script builds *all* valid configurations. The build time can be significantly reduced by disabling all but the desired configuration in `buildbase.bat`.
 
-> The libbitcoin dynamic (DLL) build configurations do not compile, as the exports have not yet been fully implemented. These are currently disabled in the build scripts but you will encounter numerous errors if you build then manually.
+> The libgroestlcoin dynamic (DLL) build configurations do not compile, as the exports have not yet been fully implemented. These are currently disabled in the build scripts but you will encounter numerous errors if you build then manually.
 
 #### Optional: Building secp256k1
 
-The secp256k1 package above is maintained using the same [Visual Studio template](https://github.com/evoskuil/visual-studio-template) as all libbitcoin libraries. If so desired it can be built locally, in the same manner as libbitcoin. The repository of secp256k1 used by libbitcoin is forked from [bitcoin/secp256k1](https://github.com/bitcoin/secp256k1) in order to control for changes and to incorporate the necessary Visual Studio build and cross-compile compatibility fixes:
+The secp256k1 package above is maintained using the same [Visual Studio template](https://github.com/evoskuil/visual-studio-template) as all libgroestlcoin libraries. If so desired it can be built locally, in the same manner as libgroestlcoin. The repository of secp256k1 used by libgroestlcoin is forked from [bitcoin/secp256k1](https://github.com/bitcoin/secp256k1) in order to control for changes and to incorporate the necessary Visual Studio build and cross-compile compatibility fixes:
 
-* [libbitcoin/secp256k1/msvc-version2](https://github.com/libbitcoin/secp256k1/tree/msvc-version2)
+* [libgroestlcoin/secp256k1/msvc-version2](https://github.com/libgroestlcoin/secp256k1/tree/msvc-version2)
 
 This change is properly accomplished by disabling the "NuGet Dependencies" in the Visual Studio properties user interface and then importing `secp256k1.import.props`, which references `secp256k1.import.xml`.

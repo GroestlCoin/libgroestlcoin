@@ -1,9 +1,9 @@
 /**
- * Copyright (c) 2011-2015 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2015 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -17,15 +17,15 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_ERROR_HPP
-#define LIBBITCOIN_ERROR_HPP
+#ifndef LIBGROESTLCOIN_ERROR_HPP
+#define LIBGROESTLCOIN_ERROR_HPP
 
 #include <string>
 #include <system_error>
 #include <boost/system/error_code.hpp>
 #include <groestlcoin/groestlcoin/define.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 namespace error {
 
     // The numeric values of these codes may change without notice.
@@ -113,16 +113,16 @@ namespace error {
     BC_API error_code_t boost_to_error_code(const boost::system::error_code& ec);
 
 } // namespace error
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 namespace std {
 
     template <>
-    struct BC_API is_error_code_enum<libbitcoin::error::error_code_t>
+    struct BC_API is_error_code_enum<libgroestlcoin::error::error_code_t>
       : public true_type {};
 
     template <>
-    struct BC_API is_error_condition_enum<libbitcoin::error::error_condition_t>
+    struct BC_API is_error_condition_enum<libgroestlcoin::error::error_condition_t>
       : public true_type {};
 
 } // namespace std

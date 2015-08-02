@@ -1,9 +1,9 @@
 /**
- * Copyright (c) 2011-2015 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2015 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -17,14 +17,14 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_RANDOM_HPP
-#define LIBBITCOIN_RANDOM_HPP
+#ifndef LIBGROESTLCOIN_RANDOM_HPP
+#define LIBGROESTLCOIN_RANDOM_HPP
 
 #include <cstdint>
 #include <groestlcoin/groestlcoin/define.hpp>
 #include <groestlcoin/groestlcoin/utility/data.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 /**
  * Generate a pseudo random number within the domain.
@@ -38,6 +38,6 @@ BC_API uint64_t pseudo_random();
  */
 BC_API void pseudo_random_fill(data_chunk& chunk);
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif

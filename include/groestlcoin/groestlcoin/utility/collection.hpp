@@ -1,9 +1,9 @@
 /**
- * Copyright (c) 2011-2015 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2015 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -17,8 +17,8 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_COLLECTION_HPP
-#define LIBBITCOIN_COLLECTION_HPP
+#ifndef LIBGROESTLCOIN_COLLECTION_HPP
+#define LIBGROESTLCOIN_COLLECTION_HPP
 
 #include <iterator>
 #include <vector>
@@ -26,7 +26,7 @@
 
 /* NOTE: don't declare 'using namespace foo' in headers. */
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 #define BC_SENTENCE_DELIMITER " "
 
@@ -79,7 +79,7 @@ template<typename Type, typename Predicate>
 typename std::vector<Type>::iterator insert_sorted(std::vector<Type>& list,
     const Type& element, Predicate predicate);
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #include <groestlcoin/groestlcoin/impl/utility/collection.ipp>
 

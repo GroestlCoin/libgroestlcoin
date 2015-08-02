@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2013 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2013 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
  * published by the Free Software Foundation, either version 3 of the
  * License, or (at your option) any later version.
@@ -16,8 +16,8 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_HD_KEYS_HPP
-#define LIBBITCOIN_HD_KEYS_HPP
+#ifndef LIBGROESTLCOIN_HD_KEYS_HPP
+#define LIBGROESTLCOIN_HD_KEYS_HPP
 
 #include <cstdint>
 #include <groestlcoin/groestlcoin/compat.hpp>
@@ -26,7 +26,7 @@
 #include <groestlcoin/groestlcoin/utility/data.hpp>
 #include <groestlcoin/groestlcoin/wallet/address.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 BC_CONSTEXPR size_t chain_code_size = 32;
 typedef byte_array<chain_code_size> chain_code_type;
@@ -98,7 +98,7 @@ protected:
     ec_secret k_;
 };
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif
 

@@ -1,9 +1,9 @@
 /**
- * Copyright (c) 2011-2015 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2015 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -38,7 +38,7 @@ static void* get_input_handle()
 }
 #endif
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 // This class/mathod is a no-op on non-windows platforms.
 // When working in Windows console set font to "Lucida Console".
@@ -114,4 +114,4 @@ std::wstreambuf::int_type console_streambuf::underflow()
     return traits_type::to_int_type(*gptr());
 }
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin

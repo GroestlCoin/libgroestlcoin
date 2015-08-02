@@ -1,9 +1,9 @@
 /**
- * Copyright (c) 2011-2015 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2015 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -17,15 +17,15 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_COLLECTION_IPP
-#define LIBBITCOIN_COLLECTION_IPP
+#ifndef LIBGROESTLCOIN_COLLECTION_IPP
+#define LIBGROESTLCOIN_COLLECTION_IPP
 
 #include <iterator>
 #include <vector>
 
 /* NOTE: don't declare 'using namespace foo' in headers. */
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 template <typename Pair, typename Key>
 int find_pair_position(const std::vector<Pair>& list, const Key& key)
@@ -71,6 +71,6 @@ typename std::vector<Type>::iterator insert_sorted(std::vector<Type>& list,
         element);
 }
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif

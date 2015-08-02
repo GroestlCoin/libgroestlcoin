@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2014 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2014 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -22,15 +22,14 @@
 #include <groestlcoin/groestlcoin/math/hash.hpp>
 #include <groestlcoin/groestlcoin/utility/endian.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
-void append_checksum(data_chunk& data)
-{
-    uint32_t checksum = groestlcoin_checksum(data);	//GRS
-    extend_data(data, to_little_endian(checksum));
+void append_checksum(data_chunk& data) {
+	uint32_t checksum = groestlcoin_checksum(data);	//GRS
+	extend_data(data, to_little_endian(checksum));
 }
 
-uint32_t bitcoin_checksum(data_slice chunk)
+uint32_t groestlcoin_checksum(data_slice chunk)
 {
     hash_digest hash = groestlcoin_hash(chunk);	//GRS
     return from_little_endian_unsafe<uint32_t>(hash.begin());
@@ -47,5 +46,5 @@ bool verify_checksum(data_slice data)
     return groestlcoin_checksum(body) == checksum;	// GRS
 }
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 

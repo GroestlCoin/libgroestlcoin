@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2014 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2014 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -27,7 +27,7 @@
 #include <groestlcoin/groestlcoin/utility/assert.hpp>
 #include <groestlcoin/groestlcoin/utility/endian.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 ec_point secret_to_public_key(const ec_secret& secret,
     bool compressed)
@@ -232,5 +232,5 @@ compact_signature sign_compact(ec_secret secret, hash_digest hash,
     return sign_compact(secret, hash);
 }
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 

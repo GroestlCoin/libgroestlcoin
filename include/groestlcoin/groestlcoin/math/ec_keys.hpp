@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2014 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2014 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -17,8 +17,8 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_EC_KEYS_HPP
-#define LIBBITCOIN_EC_KEYS_HPP
+#ifndef LIBGROESTLCOIN_EC_KEYS_HPP
+#define LIBGROESTLCOIN_EC_KEYS_HPP
 
 #include <cstddef>
 #include <groestlcoin/groestlcoin/compat.hpp>
@@ -26,7 +26,7 @@
 #include <groestlcoin/groestlcoin/math/hash.hpp>
 #include <groestlcoin/groestlcoin/utility/data.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 // Private keys:
 BC_CONSTEXPR size_t ec_secret_size = 32;
@@ -138,7 +138,7 @@ BC_API endorsement sign(ec_secret secret, hash_digest hash, ec_secret);
 BC_API compact_signature sign_compact(ec_secret secret, hash_digest hash,
     ec_secret);
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif
 

@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2013 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2013 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -17,15 +17,15 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_ADDRESS_HPP
-#define LIBBITCOIN_ADDRESS_HPP
+#ifndef LIBGROESTLCOIN_ADDRESS_HPP
+#define LIBGROESTLCOIN_ADDRESS_HPP
 
 #include <groestlcoin/groestlcoin/constants.hpp>
 #include <groestlcoin/groestlcoin/define.hpp>
 #include <groestlcoin/groestlcoin/script.hpp>
 #include <groestlcoin/groestlcoin/math/hash.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 /**
  * A class for handling Bitcoin addresses. Supports encoding and decoding
@@ -132,18 +132,18 @@ BC_API bool unwrap(uint8_t& version, data_chunk& payload, uint32_t& checksum,
  */
 BC_API data_chunk wrap(uint8_t version, data_slice payload);
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 // Allow payment_address to be in indexed in std::*map classes.
 namespace std
 {
     template <>
-    struct BC_API hash<libbitcoin::payment_address>
+    struct BC_API hash<libgroestlcoin::payment_address>
     {
-        size_t operator()(const libbitcoin::payment_address& payaddr) const
+        size_t operator()(const libgroestlcoin::payment_address& payaddr) const
         {
-            using libbitcoin::short_hash;
-            using libbitcoin::short_hash_size;
+            using libgroestlcoin::short_hash;
+            using libgroestlcoin::short_hash_size;
             std::string raw_addr;
             raw_addr.resize(short_hash_size + 1);
             raw_addr[0] = payaddr.version();

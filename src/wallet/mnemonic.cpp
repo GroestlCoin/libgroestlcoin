@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2015 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2015 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -31,7 +31,7 @@
 #include <groestlcoin/groestlcoin/wallet/dictionary.hpp>
 #include "../math/external/pkcs5_pbkdf2.h"
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 // BIP-39 private constants.
 constexpr size_t bits_per_word = 11;
@@ -153,5 +153,5 @@ long_hash decode_mnemonic(const word_list& mnemonic,
 
 #endif
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 

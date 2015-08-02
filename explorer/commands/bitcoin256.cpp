@@ -1,9 +1,9 @@
 /**
- * Copyright (c) 2011-2015 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2015 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin-explorer.
+ * This file is part of libgroestlcoin-explorer.
  *
- * libbitcoin-explorer is free software: you can redistribute it and/or
+ * libgroestlcoin-explorer is free software: you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -35,7 +35,7 @@ console_result bitcoin256::invoke(std::ostream& output, std::ostream& error)
     // Bound parameters.
     const auto& data = get_base16_argument();
 
-    const auto hash = bitcoin_hash(data);
+    const auto hash = groestlcoin_hash(data);
 
     output << btc256(hash) << std::endl;
     return console_result::okay;

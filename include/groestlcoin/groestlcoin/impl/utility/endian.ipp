@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2013 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2013 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -17,12 +17,12 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_ENDIAN_IPP
-#define LIBBITCOIN_ENDIAN_IPP
+#ifndef LIBGROESTLCOIN_ENDIAN_IPP
+#define LIBGROESTLCOIN_ENDIAN_IPP
 
 #include <type_traits>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 #define VERIFY_UNSIGNED(T) static_assert(std::is_unsigned<T>::value, \
     "The endian functions only work on unsigned types")
@@ -99,7 +99,7 @@ byte_array<sizeof(T)> to_little_endian(T n)
 
 #undef VERIFY_UNSIGNED
 
-} // libbitcoin
+} // libgroestlcoin
 
 #endif
 

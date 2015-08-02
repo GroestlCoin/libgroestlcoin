@@ -30,12 +30,12 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#ifndef LIBBITCOIN_TRIE_VALUE_NODE_HPP
-#define LIBBITCOIN_TRIE_VALUE_NODE_HPP
+#ifndef LIBGROESTLCOIN_TRIE_VALUE_NODE_HPP
+#define LIBGROESTLCOIN_TRIE_VALUE_NODE_HPP
 
 #include <boost/utility.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 template<typename Value>
 class trie_structure_node;
@@ -61,7 +61,7 @@ public:
     explicit trie_value_node(const value_type& x);
 };
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #include <groestlcoin/groestlcoin/impl/trie/trie_value_node.ipp>
 

@@ -1,9 +1,9 @@
 /**
- * Copyright (c) 2011-2015 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2015 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin-explorer.
+ * This file is part of libgroestlcoin-explorer.
  *
- * libbitcoin-explorer is free software: you can redistribute it and/or
+ * libgroestlcoin-explorer is free software: you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -45,7 +45,7 @@ using namespace boost::posix_time;
 using namespace bc::client;
 using boost::filesystem::path;
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 namespace explorer {
 
 static void output_to_file(std::ofstream& file, log_level level, 
@@ -169,7 +169,7 @@ std::vector<std::string> numbers_to_strings(const index_list& indexes)
 }
 
 // Not testable due to lack of random engine injection.
-// DEPRECATED in favor of libbitcoin::pseudo_random_fill.
+// DEPRECATED in favor of libgroestlcoin::pseudo_random_fill.
 void random_fill(data_chunk& chunk)
 {
     pseudo_random_fill(chunk);
@@ -261,4 +261,4 @@ std::ostream& write_stream(std::ostream& output, const pt::ptree& tree,
 }
 
 } // namespace explorer
-} // namespace libbitcoin
+} // namespace libgroestlcoin

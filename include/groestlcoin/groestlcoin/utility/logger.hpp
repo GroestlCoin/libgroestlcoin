@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2013 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2013 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -17,15 +17,15 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_LOGGER_HPP
-#define LIBBITCOIN_LOGGER_HPP
+#ifndef LIBGROESTLCOIN_LOGGER_HPP
+#define LIBGROESTLCOIN_LOGGER_HPP
 
 #include <functional>
 #include <map>
 #include <sstream>
 #include <groestlcoin/groestlcoin/define.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 enum class log_level
 {
@@ -74,7 +74,7 @@ BC_API logger_wrapper log_warning(const std::string& domain="");
 BC_API logger_wrapper log_error(const std::string& domain="");
 BC_API logger_wrapper log_fatal(const std::string& domain="");
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif
 

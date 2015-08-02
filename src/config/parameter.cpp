@@ -1,9 +1,9 @@
 /**
- * Copyright (c) 2011-2015 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2015 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -27,7 +27,7 @@
 #include <groestlcoin/groestlcoin/utility/string.hpp>
 
 namespace po = boost::program_options;
-using namespace libbitcoin::config;
+using namespace libgroestlcoin::config;
 
 const int parameter::not_positional = -1;
 const char parameter::no_short_name = 0x00;
@@ -63,7 +63,7 @@ char parameter::short_name(const po::option_description& option) const
     //auto name = option.canonical_display_name(
     //    search_options::dashed_short_prefer_short);
 
-    // This is a substitute that allows us to use boost 1.49 for libbitcoin.
+    // This is a substitute that allows us to use boost 1.49 for libgroestlcoin.
     const auto name = split(option.format_name()).front();
     auto is_short_name = name[0] == option_prefix_char && 
         name[1] != option_prefix_char;

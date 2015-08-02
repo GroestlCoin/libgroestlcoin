@@ -1,10 +1,10 @@
 /**
- * Copyright (c) 2011-2015 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2015 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of  * This file is part of libbitcoin-explorer.
+ * This file is part of  * This file is part of libgroestlcoin-explorer.
 .
  *
- * libbitcoin-explorer is free software: you can redistribute it and/or
+ * libgroestlcoin-explorer is free software: you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -21,7 +21,7 @@
 #include <iostream>
 #include <groestlcoin/explorer.hpp>
 
-BC_USE_LIBBITCOIN_MAIN
+BC_USE_LIBGROESTLCOIN_MAIN
 
 /**
  * Invoke this program with the raw arguments provided on the command line.
@@ -34,4 +34,4 @@ int bc::main(int argc, char* argv[])
 {
     return bc::explorer::dispatch(argc, const_cast<const char**>(argv),
         bc::cin, bc::cout, bc::cerr);
-}
+	}

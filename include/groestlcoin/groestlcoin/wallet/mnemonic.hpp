@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2015 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2015 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -17,8 +17,8 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_MNEMONIC_HPP
-#define LIBBITCOIN_MNEMONIC_HPP
+#ifndef LIBGROESTLCOIN_MNEMONIC_HPP
+#define LIBGROESTLCOIN_MNEMONIC_HPP
 
 #include <cstddef>
 #include <string>
@@ -30,7 +30,7 @@
 #include <groestlcoin/groestlcoin/utility/data.hpp>
 #include <groestlcoin/groestlcoin/wallet/dictionary.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 /**
  * A valid mnemonic word count is evenly divisible by this number.
@@ -85,6 +85,6 @@ BC_API long_hash decode_mnemonic(const word_list& mnemonic,
 
 #endif
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif

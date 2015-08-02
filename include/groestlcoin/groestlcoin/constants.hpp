@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2013 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2013 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -17,8 +17,8 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_CONSTANTS_HPP
-#define LIBBITCOIN_CONSTANTS_HPP
+#ifndef LIBGROESTLCOIN_CONSTANTS_HPP
+#define LIBGROESTLCOIN_CONSTANTS_HPP
 
 #include <cstddef>
 #include <cstdint>
@@ -26,7 +26,7 @@
 #include <groestlcoin/groestlcoin/define.hpp>
 #include <groestlcoin/groestlcoin/math/hash_number.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 // Generic constants.
 
@@ -98,6 +98,6 @@ BC_CONSTFUNC uint64_t max_money()
 BC_API hash_number max_target();
 BC_API uint32_t magic_value();
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif

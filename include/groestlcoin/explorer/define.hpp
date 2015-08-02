@@ -1,9 +1,9 @@
 /**
- * Copyright (c) 2011-2015 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2015 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin-explorer.
+ * This file is part of libgroestlcoin-explorer.
  *
- * libbitcoin-explorer is free software: you can redistribute it and/or
+ * libgroestlcoin-explorer is free software: you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -26,7 +26,7 @@
 #include <boost/property_tree/ptree.hpp>
 #include <groestlcoin/client.hpp>
 
-// We use the generic helper definitions in libbitcoin to define BCX_API 
+// We use the generic helper definitions in libgroestlcoin to define BCX_API 
 // and BCX_INTERNAL. BCX_API is used for the public API symbols. It either DLL
 // imports or DLL exports (or does nothing for static build) BCX_INTERNAL is 
 // used for non-api symbols.

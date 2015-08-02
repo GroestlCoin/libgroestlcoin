@@ -1,9 +1,9 @@
 /**
- * Copyright (c) 2011-2015 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2015 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -17,15 +17,15 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_DIRECTORY_HPP
-#define LIBBITCOIN_DIRECTORY_HPP
+#ifndef LIBGROESTLCOIN_DIRECTORY_HPP
+#define LIBGROESTLCOIN_DIRECTORY_HPP
 
 #include <string>
 #include <groestlcoin/groestlcoin/define.hpp>
 
 /* NOTE: don't declare 'using namespace foo' in headers. */
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 namespace config {
 
 /**
@@ -35,6 +35,6 @@ namespace config {
 BC_API std::string windows_config_directory();
 
 } // namespace config
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif

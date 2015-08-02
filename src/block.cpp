@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2013 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2013 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -27,7 +27,7 @@
 #include <groestlcoin/groestlcoin/utility/assert.hpp>
 #include <groestlcoin/groestlcoin/utility/serializer.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 // The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
 const auto genesis_input_script = data_chunk
@@ -99,7 +99,7 @@ hash_digest hash_block_header(const block_header_type& header)
 {
     data_chunk raw_block_header(80);
     satoshi_save(header, raw_block_header.begin());
-    return bitcoin_hash(raw_block_header);
+    return groestlcoin_hash(raw_block_header);
 }
 
 index_list block_locator_indexes(size_t top_height)
@@ -167,5 +167,5 @@ block_type genesis_block()
     return genesis;
 }
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 

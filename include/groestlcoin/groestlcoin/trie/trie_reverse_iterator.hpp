@@ -30,13 +30,13 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#ifndef LIBBITCOIN_TRIE_REVERSE_ITERATOR_HPP
-#define LIBBITCOIN_TRIE_REVERSE_ITERATOR_HPP
+#ifndef LIBGROESTLCOIN_TRIE_REVERSE_ITERATOR_HPP
+#define LIBGROESTLCOIN_TRIE_REVERSE_ITERATOR_HPP
 
 #include <groestlcoin/groestlcoin/trie/trie_iterator.hpp>
 #include <groestlcoin/groestlcoin/utility/binary.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 template<typename TrieIterator>
 class trie_reverse_iterator
@@ -93,7 +93,7 @@ private:
     base_iter_type base_iterator_;
 };
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #include <groestlcoin/groestlcoin/impl/trie/trie_reverse_iterator.ipp>
 

@@ -30,10 +30,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#ifndef LIBBITCOIN_TRIE_REVERSE_ITERATOR_IPP
-#define LIBBITCOIN_TRIE_REVERSE_ITERATOR_IPP
+#ifndef LIBGROESTLCOIN_TRIE_REVERSE_ITERATOR_IPP
+#define LIBGROESTLCOIN_TRIE_REVERSE_ITERATOR_IPP
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 // trie_reverse_iterator implementation
 template <typename TrieIterator>
@@ -140,6 +140,6 @@ binary_type trie_reverse_iterator<TrieIterator>::get_key()
     return (--it).get_key();
 }
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif

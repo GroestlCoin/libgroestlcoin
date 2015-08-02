@@ -1,9 +1,9 @@
 /**
- * Copyright (c) 2011-2015 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2015 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin-explorer.
+ * This file is part of libgroestlcoin-explorer.
  *
- * libbitcoin-explorer is free software: you can redistribute it and/or
+ * libgroestlcoin-explorer is free software: you can redistribute it and/or
  * modify it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -32,7 +32,7 @@
 
 using namespace pt;
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 namespace explorer {
     
 callback_state::callback_state(std::ostream& error, std::ostream& output,
@@ -168,4 +168,4 @@ callback_state& callback_state::operator--()
 }
 
 } // namespace explorer
-} // namespace libbitcoin
+} // namespace libgroestlcoin

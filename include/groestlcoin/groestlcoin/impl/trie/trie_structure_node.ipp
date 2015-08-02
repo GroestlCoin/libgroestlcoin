@@ -30,10 +30,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#ifndef LIBBITCOIN_TRIE_STRUCTURE_NODE_IPP
-#define LIBBITCOIN_TRIE_STRUCTURE_NODE_IPP
+#ifndef LIBGROESTLCOIN_TRIE_STRUCTURE_NODE_IPP
+#define LIBGROESTLCOIN_TRIE_STRUCTURE_NODE_IPP
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 // trie_node implenentation
 template<typename Value>
@@ -102,6 +102,6 @@ trie_structure_node<Value>::get_last_child() const
     return result;
 }
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif

@@ -1,9 +1,9 @@
 /**
- * Copyright (c) 2011-2018 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2018 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -44,7 +44,7 @@
 #include <groestlcoin/groestlcoin/utility/serializer.hpp>
 #include <groestlcoin/groestlcoin/utility/string.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 namespace network {
 
 using std::placeholders::_1;
@@ -417,7 +417,7 @@ void channel_proxy::handle_read_payload(const boost::system::error_code& ec,
     BITCOIN_ASSERT(bytes_transferred == inbound_payload_.size());
 
     const data_chunk payload(inbound_payload_);
-    if (header.checksum != bitcoin_checksum(payload))
+    if (header.checksum != groestlcoin_checksum(payload))
     {
         log_warning(LOG_NETWORK) 
             << "Invalid checksum from [" << address().to_string() << "]";
@@ -584,4 +584,4 @@ void channel_proxy::do_send_common(const data_chunk& message,
 }
 
 } // namespace network
-} // namespace libbitcoin
+} // namespace libgroestlcoin

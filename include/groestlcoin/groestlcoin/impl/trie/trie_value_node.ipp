@@ -30,10 +30,10 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#ifndef LIBBITCOIN_TRIE_VALUE_NODE_IPP
-#define LIBBITCOIN_TRIE_VALUE_NODE_IPP
+#ifndef LIBGROESTLCOIN_TRIE_VALUE_NODE_IPP
+#define LIBGROESTLCOIN_TRIE_VALUE_NODE_IPP
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 // trie_value_node implementation
 template<typename Value>
@@ -48,6 +48,6 @@ trie_value_node<Value>::trie_value_node(const value_type& value)
 {
 }
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif

@@ -9,7 +9,7 @@
 #include <string.h>
 #include <groestlcoin/groestlcoin/utility/assert.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 template <unsigned int BITS>
 base_uint<BITS>::base_uint(const std::vector<unsigned char>& vch)
@@ -260,4 +260,4 @@ uint256_t& uint256_t::SetCompact(uint32_t nCompact, bool* pfNegative,
     return *this;
 }
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin

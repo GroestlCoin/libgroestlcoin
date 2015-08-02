@@ -16,7 +16,7 @@
 #include <groestlcoin/groestlcoin/define.hpp>
 #include <groestlcoin/groestlcoin/utility/assert.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 class BC_API uint_error 
     : public std::runtime_error
@@ -331,6 +331,6 @@ public:
         bool *pfOverflow = NULL);
 };
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif

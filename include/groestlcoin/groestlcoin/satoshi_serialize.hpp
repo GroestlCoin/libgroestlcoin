@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2013 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2013 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -17,8 +17,8 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_SATOSHI_SERIALIZE_HPP
-#define LIBBITCOIN_SATOSHI_SERIALIZE_HPP
+#ifndef LIBGROESTLCOIN_SATOSHI_SERIALIZE_HPP
+#define LIBGROESTLCOIN_SATOSHI_SERIALIZE_HPP
 
 #include <cstdint>
 #include <groestlcoin/groestlcoin/compat.hpp>
@@ -26,7 +26,7 @@
 #include <groestlcoin/groestlcoin/primitives.hpp>
 #include <groestlcoin/groestlcoin/transaction.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 BC_CONSTEXPR size_t command_size = 12;
 
@@ -145,7 +145,7 @@ template <typename Iterator>
 void satoshi_load(const Iterator first, const Iterator last,
     pong_type& packet);
 
-} // libbitcoin
+} // libgroestlcoin
 
 #include <groestlcoin/groestlcoin/impl/serialize/misc.ipp>
 #include <groestlcoin/groestlcoin/impl/serialize/block.ipp>

@@ -1,9 +1,9 @@
 /**
- * Copyright (c) 2011-2015 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2015 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -27,7 +27,7 @@
 #include <groestlcoin/groestlcoin/unicode/unicode.hpp>
 #include <groestlcoin/groestlcoin/utility/assert.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 // Local definition for max number of bytes in a utf8 character.
 constexpr size_t utf8_max_character_size = 4;
@@ -148,4 +148,4 @@ int unicode_streambuf::sync()
     return failure;
 }
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin

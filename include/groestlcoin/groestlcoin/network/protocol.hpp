@@ -1,9 +1,9 @@
 /**
- * Copyright (c) 2011-2018 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2018 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-// TODO: rationalize include guard names (conflict with libbitcoin-protocol).
+// TODO: rationalize include guard names (conflict with libgroestlcoin-protocol).
 #ifndef BC_PROTOCOL_HPP
 #define BC_PROTOCOL_HPP
 
@@ -40,7 +40,7 @@
 #include <groestlcoin/groestlcoin/utility/subscriber.hpp>
 #include <groestlcoin/groestlcoin/utility/threadpool.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 namespace network {
 
 class seeder;
@@ -292,7 +292,7 @@ private:
 };
 
 } // namespace network
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif
 

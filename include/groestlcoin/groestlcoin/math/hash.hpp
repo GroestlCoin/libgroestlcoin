@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2013 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2013 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -17,8 +17,8 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_HASH_HPP
-#define LIBBITCOIN_HASH_HPP
+#ifndef LIBGROESTLCOIN_HASH_HPP
+#define LIBGROESTLCOIN_HASH_HPP
 
 #include <cstddef>
 #include <string>
@@ -27,7 +27,7 @@
 #include <groestlcoin/groestlcoin/define.hpp>
 #include <groestlcoin/groestlcoin/utility/data.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 BC_CONSTEXPR size_t short_hash_size = 20;
 BC_CONSTEXPR size_t hash_size = 32;
@@ -121,8 +121,10 @@ BC_API long_hash pkcs5_pbkdf2_hmac_sha512(data_slice passphrase,
  *
  * sha256(sha256(data))
  */
-BC_API hash_digest bitcoin_hash(data_slice data);
+//GRS BC_API hash_digest bitcoin_hash(data_slice data);
+BC_API hash_digest SHA256_SHA256(data_slice data);
 BC_API hash_digest groestlcoin_hash(data_slice data);
+BC_API hash_digest HashFromTx(data_slice data);
 
 /**
  * Generate a bitcoin short hash. This hash function is used in a
@@ -143,15 +145,15 @@ struct BC_API std_hash_wrapper
     }
 };
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 // Extend std namespace with our hash wrappers
 namespace std
 {
-    using libbitcoin::std_hash_wrapper;
-    using libbitcoin::short_hash;
-    using libbitcoin::hash_digest;
-    using libbitcoin::long_hash;
+    using libgroestlcoin::std_hash_wrapper;
+    using libgroestlcoin::short_hash;
+    using libgroestlcoin::hash_digest;
+    using libgroestlcoin::long_hash;
 
     template <>
     struct BC_API hash<short_hash>

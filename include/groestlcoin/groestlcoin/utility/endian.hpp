@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2013 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2013 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -17,13 +17,13 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_ENDIAN_HPP
-#define LIBBITCOIN_ENDIAN_HPP
+#ifndef LIBGROESTLCOIN_ENDIAN_HPP
+#define LIBGROESTLCOIN_ENDIAN_HPP
 
 #include <groestlcoin/groestlcoin/define.hpp>
 #include <groestlcoin/groestlcoin/utility/data.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 template <typename T, typename Iterator>
 T from_big_endian(Iterator start, Iterator end);
@@ -45,7 +45,7 @@ byte_array<sizeof(T)> to_little_endian(T n);
 
 byte_array<1> to_byte(uint8_t byte);
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #include <groestlcoin/groestlcoin/impl/utility/endian.ipp>
 

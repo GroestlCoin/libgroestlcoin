@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2014 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2014 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -24,7 +24,7 @@
 #include <boost/algorithm/string.hpp>
 #include <groestlcoin/groestlcoin/constants.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 static bool is_digit(const char c)
 {
@@ -102,4 +102,4 @@ std::string satoshi_to_btc(uint64_t satoshi)
     return encode_base10(satoshi, btc_decimal_places);
 }
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin

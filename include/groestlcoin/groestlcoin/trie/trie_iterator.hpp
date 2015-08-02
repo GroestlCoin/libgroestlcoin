@@ -30,14 +30,14 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-#ifndef LIBBITCOIN_TRIE_ITERATOR_HPP
-#define LIBBITCOIN_TRIE_ITERATOR_HPP
+#ifndef LIBGROESTLCOIN_TRIE_ITERATOR_HPP
+#define LIBGROESTLCOIN_TRIE_ITERATOR_HPP
 
 #include <groestlcoin/groestlcoin/trie/trie_structure_node.hpp>
 #include <groestlcoin/groestlcoin/trie/trie_value_node.hpp>
 #include <groestlcoin/groestlcoin/utility/binary.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 template<typename Value, typename StructureNodeAllocator,
     typename ValueNodeAllocator, typename Comparer>
@@ -97,7 +97,7 @@ private:
     binary_type cached_key_;
 };
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #include <groestlcoin/groestlcoin/impl/trie/trie_iterator.ipp>
 

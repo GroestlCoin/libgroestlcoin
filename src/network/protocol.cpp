@@ -1,9 +1,9 @@
 /**
- * Copyright (c) 2011-2018 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2018 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -35,7 +35,7 @@
 #include <groestlcoin/groestlcoin/utility/logger.hpp>
 #include <groestlcoin/groestlcoin/utility/threadpool.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 namespace network {
 
 using std::placeholders::_1;
@@ -696,4 +696,4 @@ void protocol::bootstrap(completion_handler handle_complete)
 }
 
 } // namespace network
-} // namespace libbitcoin
+} // namespace libgroestlcoin

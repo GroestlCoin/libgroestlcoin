@@ -1,9 +1,9 @@
 ﻿/**
- * Copyright (c) 2011-2015 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2015 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -17,8 +17,8 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_UNICODE_HPP
-#define LIBBITCOIN_UNICODE_HPP
+#ifndef LIBGROESTLCOIN_UNICODE_HPP
+#define LIBGROESTLCOIN_UNICODE_HPP
 
 #include <cstddef>
 #include <iostream>
@@ -36,7 +36,7 @@
 // Libbitcoin embraces the "utf8 everywhere" design: http://utf8everywhere.org
 // The objective is to use utf8 as the canonical string encoding, pushing
 // wchar_t translation to the edge (stdio, argv, O/S and external API calls).
-// The macro BC_USE_LIBBITCOIN_MAIN does most of the heavy lifting to ensure
+// The macro BC_USE_LIBGROESTLCOIN_MAIN does most of the heavy lifting to ensure
 // that stdio and argv is configured for utf8. The 'to_utf' functions are
 // provided for API translations.
 
@@ -51,7 +51,7 @@
 
 // Regarding Unicode in console applications:
 //
-// BC_USE_LIBBITCOIN_MAIN should be declared prior to bc::main() in a console
+// BC_USE_LIBGROESTLCOIN_MAIN should be declared prior to bc::main() in a console
 // application. This enables Unicode argument and environment processing in 
 // Windows. This macro implements main() and forwards to bc::main(), which 
 // should be implemented as if it was main() with the expectation that argv 
@@ -82,14 +82,14 @@
     #include <boost/filesystem.hpp>
     #include <boost/locale.hpp>
     #include <windows.h>
-    #define BC_USE_LIBBITCOIN_MAIN \
-        namespace libbitcoin { \
+    #define BC_USE_LIBGROESTLCOIN_MAIN \
+        namespace libgroestlcoin { \
         int main(int argc, char* argv[]); \
         } \
         \
         int wmain(int argc, wchar_t* argv[]) \
         { \
-            using namespace libbitcoin; \
+            using namespace libgroestlcoin; \
             boost::locale::generator locale; \
             std::locale::global(locale(BC_LOCALE_UTF8)); \
             boost::filesystem::path::imbue(std::locale()); \
@@ -100,21 +100,21 @@
             auto arguments = to_utf8(argc, argv); \
             auto args = reinterpret_cast<char**>(arguments.data()); \
             \
-            return libbitcoin::main(argc, args); \
+            return libgroestlcoin::main(argc, args); \
         }
 #else
-    #define BC_USE_LIBBITCOIN_MAIN \
-        namespace libbitcoin { \
+    #define BC_USE_LIBGROESTLCOIN_MAIN \
+        namespace libgroestlcoin { \
         int main(int argc, char* argv[]); \
         } \
         \
         int main(int argc, char* argv[]) \
         { \
-            return libbitcoin::main(argc, argv); \
+            return libgroestlcoin::main(argc, argv); \
         }
 #endif
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 /**
  * Use bc::cin in place of std::cin.
@@ -236,6 +236,6 @@ BC_API void set_binary_stdin();
  */
 BC_API void set_binary_stdout();
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif

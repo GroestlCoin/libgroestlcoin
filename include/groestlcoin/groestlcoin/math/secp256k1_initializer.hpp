@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2015 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2015 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -17,14 +17,14 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef LIBBITCOIN_SECP256K1_INIT_HPP
-#define LIBBITCOIN_SECP256K1_INIT_HPP
+#ifndef LIBGROESTLCOIN_SECP256K1_INIT_HPP
+#define LIBGROESTLCOIN_SECP256K1_INIT_HPP
 
 #include <mutex>
 #include <secp256k1.h>
 #include <groestlcoin/groestlcoin/define.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 /**
  * Virtual base class for secp256k1 context management.
@@ -98,6 +98,6 @@ extern secp256k1_signing signing;
  */
 extern secp256k1_verification verification;
 
-} // namespace libbitcoin
+} // namespace libgroestlcoin
 
 #endif

@@ -42,6 +42,45 @@
     <Filter Include="Source Files\config">
       <UniqueIdentifier>{70e8f7dd-370b-4b6e-90fb-77fb25de2887}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\math\sphlib">
+      <UniqueIdentifier>{47f5f199-c93f-40b4-a33d-fb68ff2c648b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\groestlcoin\impl">
+      <UniqueIdentifier>{99afdec0-e5d3-4e64-9a78-070647d702c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\groestlcoin\impl\serialize">
+      <UniqueIdentifier>{936efc9a-3688-4777-a7b9-6191abb8f7be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\groestlcoin\impl\trie">
+      <UniqueIdentifier>{7727e20b-bdbe-4055-9c51-0283f4425ca4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\groestlcoin\impl\utility">
+      <UniqueIdentifier>{e1e48e46-299e-4b21-9d61-6014c43b936d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\groestlcoin\impl\formats">
+      <UniqueIdentifier>{bbfc465c-7b64-4f3c-9db3-513ee01cd90a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\groestlcoin\math">
+      <UniqueIdentifier>{083cd90a-5326-4a1b-8668-084747f5410d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\network">
+      <UniqueIdentifier>{6108d89a-1d7f-4edd-b8fc-dea75a79ebfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\trie">
+      <UniqueIdentifier>{dffe225a-6a01-4241-a779-ad4abd683e6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\unicode">
+      <UniqueIdentifier>{23e36b31-23ed-4c0e-b05f-c244f06aa214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\groestlcoin\wallet">
+      <UniqueIdentifier>{70fe82c2-7036-4248-9a42-1d8c8d265b90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\groestlcoin\formats">
+      <UniqueIdentifier>{c5d7d891-5404-47b4-8e6e-54ff7042a39a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\groestlcoin\config">
+      <UniqueIdentifier>{e1b90d8f-bf30-408d-bff5-fda9b3c2d992}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="math\checksum.cpp">
@@ -236,6 +275,9 @@
     <ClCompile Include="config\directory.cpp">
       <Filter>Source Files\config</Filter>
     </ClCompile>
+    <ClCompile Include="math\sphlib\groestl.cpp">
+      <Filter>Source Files\math\sphlib</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="libgroestlcoin-config.h">
@@ -334,5 +376,190 @@
     <ClInclude Include="..\include\groestlcoin\groestlcoin\utility\timed_section.hpp">
       <Filter>Header Files\groestlcoin\utility</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\math\checksum.hpp">
+      <Filter>Header Files\groestlcoin\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\math\ec_keys.hpp">
+      <Filter>Header Files\groestlcoin\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\math\hash.hpp">
+      <Filter>Header Files\groestlcoin\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\math\hash_number.hpp">
+      <Filter>Header Files\groestlcoin\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\math\script_number.hpp">
+      <Filter>Header Files\groestlcoin\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\math\secp256k1_initializer.hpp">
+      <Filter>Header Files\groestlcoin\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\math\uint256.hpp">
+      <Filter>Header Files\groestlcoin\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\network\acceptor.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\network\authority.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\network\channel.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\network\channel_loader_module.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\network\channel_proxy.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\network\channel_stream_loader.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\network\handshake.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\network\hosts.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\network\network.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\network\protocol.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\network\seeder.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\network\shared_const_buffer.hpp">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\trie\binary_trie.hpp">
+      <Filter>Header Files\trie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\trie\trie_iterator.hpp">
+      <Filter>Header Files\trie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\trie\trie_reverse_iterator.hpp">
+      <Filter>Header Files\trie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\trie\trie_structure_node.hpp">
+      <Filter>Header Files\trie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\trie\trie_value_node.hpp">
+      <Filter>Header Files\trie</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\unicode\console_streambuf.hpp">
+      <Filter>Header Files\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\unicode\ifstream.hpp">
+      <Filter>Header Files\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\unicode\ofstream.hpp">
+      <Filter>Header Files\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\unicode\unicode.hpp">
+      <Filter>Header Files\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\unicode\unicode_istream.hpp">
+      <Filter>Header Files\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\unicode\unicode_ostream.hpp">
+      <Filter>Header Files\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\unicode\unicode_streambuf.hpp">
+      <Filter>Header Files\unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\wallet\address.hpp">
+      <Filter>Header Files\groestlcoin\wallet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\wallet\dictionary.hpp">
+      <Filter>Header Files\groestlcoin\wallet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\wallet\hd_keys.hpp">
+      <Filter>Header Files\groestlcoin\wallet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\wallet\key_formats.hpp">
+      <Filter>Header Files\groestlcoin\wallet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\wallet\message.hpp">
+      <Filter>Header Files\groestlcoin\wallet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\wallet\mnemonic.hpp">
+      <Filter>Header Files\groestlcoin\wallet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\wallet\stealth_address.hpp">
+      <Filter>Header Files\groestlcoin\wallet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\wallet\uri.hpp">
+      <Filter>Header Files\groestlcoin\wallet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\formats\base16.hpp">
+      <Filter>Header Files\groestlcoin\formats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\formats\base10.hpp">
+      <Filter>Header Files\groestlcoin\formats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\formats\base58.hpp">
+      <Filter>Header Files\groestlcoin\formats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\formats\base64.hpp">
+      <Filter>Header Files\groestlcoin\formats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\formats\base85.hpp">
+      <Filter>Header Files\groestlcoin\formats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\config\directory.hpp">
+      <Filter>Header Files\groestlcoin\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\config\parameter.hpp">
+      <Filter>Header Files\groestlcoin\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\groestlcoin\groestlcoin\config\printer.hpp">
+      <Filter>Header Files\groestlcoin\config</Filter>
+    </ClInclude>
+    <ClInclude Include="network\connect_with_timeout.hpp">
+      <Filter>Source Files\network</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\include\groestlcoin\groestlcoin\impl\formats\base16.ipp">
+      <Filter>Header Files\groestlcoin\impl\formats</Filter>
+    </None>
+    <None Include="..\include\groestlcoin\groestlcoin\impl\utility\array_slice.ipp">
+      <Filter>Header Files\groestlcoin\impl\utility</Filter>
+    </None>
+    <None Include="..\include\groestlcoin\groestlcoin\impl\utility\collection.ipp">
+      <Filter>Header Files\groestlcoin\impl\utility</Filter>
+    </None>
+    <None Include="..\include\groestlcoin\groestlcoin\impl\utility\data.ipp">
+      <Filter>Header Files\groestlcoin\impl\utility</Filter>
+    </None>
+    <None Include="..\include\groestlcoin\groestlcoin\impl\utility\endian.ipp">
+      <Filter>Header Files\groestlcoin\impl\utility</Filter>
+    </None>
+    <None Include="..\include\groestlcoin\groestlcoin\impl\utility\serializer.ipp">
+      <Filter>Header Files\groestlcoin\impl\utility</Filter>
+    </None>
+    <None Include="..\include\groestlcoin\groestlcoin\impl\trie\binary_trie.ipp">
+      <Filter>Header Files\groestlcoin\impl\trie</Filter>
+    </None>
+    <None Include="..\include\groestlcoin\groestlcoin\impl\trie\trie_iterator.ipp">
+      <Filter>Header Files\groestlcoin\impl\trie</Filter>
+    </None>
+    <None Include="..\include\groestlcoin\groestlcoin\impl\trie\trie_reverse_iterator.ipp">
+      <Filter>Header Files\groestlcoin\impl\trie</Filter>
+    </None>
+    <None Include="..\include\groestlcoin\groestlcoin\impl\trie\trie_structure_node.ipp">
+      <Filter>Header Files\groestlcoin\impl\trie</Filter>
+    </None>
+    <None Include="..\include\groestlcoin\groestlcoin\impl\trie\trie_value_node.ipp">
+      <Filter>Header Files\groestlcoin\impl\trie</Filter>
+    </None>
+    <None Include="..\include\groestlcoin\groestlcoin\impl\serialize\block.ipp">
+      <Filter>Header Files\groestlcoin\impl\serialize</Filter>
+    </None>
+    <None Include="..\include\groestlcoin\groestlcoin\impl\serialize\misc.ipp">
+      <Filter>Header Files\groestlcoin\impl\serialize</Filter>
+    </None>
   </ItemGroup>
 </Project>

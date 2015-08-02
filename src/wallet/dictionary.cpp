@@ -1,9 +1,9 @@
 /*
- * Copyright (c) 2011-2015 libbitcoin developers (see AUTHORS)
+ * Copyright (c) 2011-2015 libgroestlcoin developers (see AUTHORS)
  *
- * This file is part of libbitcoin.
+ * This file is part of libgroestlcoin.
  *
- * libbitcoin is free software: you can redistribute it and/or modify
+ * libgroestlcoin is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License with
  * additional permissions to the one published by the Free Software
  * Foundation, either version 3 of the License, or (at your option)
@@ -19,7 +19,7 @@
  */
 #include <groestlcoin/groestlcoin/wallet/dictionary.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 namespace language {
 
 const dictionary en =
@@ -10304,4 +10304,4 @@ const dictionary_list all
 };
 
 } // namespace language
-} // namespace libbitcoin
+} // namespace libgroestlcoin
