@@ -122,6 +122,7 @@ BC_API long_hash pkcs5_pbkdf2_hmac_sha512(data_slice passphrase,
  * sha256(sha256(data))
  */
 BC_API hash_digest bitcoin_hash(data_slice data);
+BC_API hash_digest groestlcoin_hash(data_slice data);
 
 /**
  * Generate a bitcoin short hash. This hash function is used in a

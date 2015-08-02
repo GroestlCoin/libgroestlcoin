@@ -26,13 +26,13 @@ namespace libbitcoin {
 
 void append_checksum(data_chunk& data)
 {
-    uint32_t checksum = bitcoin_checksum(data);
+    uint32_t checksum = groestlcoin_checksum(data);	//GRS
     extend_data(data, to_little_endian(checksum));
 }
 
 uint32_t bitcoin_checksum(data_slice chunk)
 {
-    hash_digest hash = bitcoin_hash(chunk);
+    hash_digest hash = groestlcoin_hash(chunk);	//GRS
     return from_little_endian_unsafe<uint32_t>(hash.begin());
 }
 
@@ -44,7 +44,7 @@ bool verify_checksum(data_slice data)
 
     data_slice body(data.begin(), data.end() - checksum_size);
     auto checksum = from_little_endian_unsafe<uint32_t>(data.end() - checksum_size);
-    return bitcoin_checksum(body) == checksum;
+    return groestlcoin_checksum(body) == checksum;	// GRS
 }
 
 } // namespace libbitcoin

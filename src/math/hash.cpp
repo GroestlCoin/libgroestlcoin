@@ -29,6 +29,9 @@
 #include "../math/external/sha256.h"
 #include "../math/external/sha512.h"
 
+#include <sphlib/sph_groestl.h>	//GRS
+
+
 namespace libbitcoin {
 
 short_hash ripemd160_hash(data_slice data)
@@ -98,9 +101,25 @@ long_hash pkcs5_pbkdf2_hmac_sha512(data_slice passphrase,
     return hash;
 }
 
-hash_digest bitcoin_hash(data_slice data)
+/*!!!GRS hash_digest bitcoin_hash(data_slice data)
 {
     return sha256_hash(sha256_hash(data));
+}*/
+
+hash_digest groestlcoin_hash(data_slice data) {
+    sph_groestl512_context  ctx_gr[2];
+    static unsigned char pblank[1];
+    uint256 hash[4];
+	
+    sph_groestl512_init(&ctx_gr[0]);
+    sph_groestl512 (&ctx_gr[0], cbuf.P ? cbuf.P : pblank, cbuf.Size);
+    sph_groestl512_close(&ctx_gr[0], static_cast<void*>(&hash[0]));
+	
+	sph_groestl512_init(&ctx_gr[1]);
+	sph_groestl512(&ctx_gr[1],static_cast<const void*>(&hash[0]), 64);
+	sph_groestl512_close(&ctx_gr[1],static_cast<void*>(&hash[2]));
+	
+    return hash[2];
 }
 
 short_hash bitcoin_short_hash(data_slice data)

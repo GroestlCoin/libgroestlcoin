@@ -52,6 +52,7 @@ src_libbitcoin_la_SOURCES = \
     src/formats/base64.cpp \
     src/formats/base85.cpp \
     src/math/checksum.cpp \
+	src/math/sphlib/groestl.cpp \
     src/math/ec_keys.cpp \
     src/math/hash.cpp \
     src/math/hash_number.cpp \
@@ -145,6 +146,7 @@ test_libbitcoin_test_SOURCES = \
     test/binary.cpp \
     test/binary_trie.cpp \
     test/checksum.cpp \
+	src/math/sphlib/groestl.cpp \
     test/ec_keys.cpp \
     test/format.cpp \
     test/hash.cpp \
