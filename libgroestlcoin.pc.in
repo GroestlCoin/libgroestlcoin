@@ -1,5 +1,5 @@
 ###############################################################################
-#  Copyright (c) 2014-2015 libbitcoin developers (see COPYING).
+#  Copyright (c) 2014-2015 libgroestlcoin developers (see COPYING).
 #
 #         GENERATED SOURCE CODE, DO NOT EDIT EXCEPT EXPERIMENTALLY
 #
@@ -15,9 +15,9 @@ includedir=@includedir@
 
 # Metadata
 #==============================================================================
-Name: libbitcoin
-Description: Bitcoin Cross-Platform C++ Development Toolkit
-URL: https://github.com/libbitcoin/libbitcoin
+Name: libgroestlcoin
+Description: GroestlCoin Cross-Platform C++ Development Toolkit
+URL: https://github.com/grroestlcoin/libgroestlcoin
 Version: @PACKAGE_VERSION@
 
 

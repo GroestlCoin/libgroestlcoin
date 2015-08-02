@@ -1,5 +1,5 @@
 ###############################################################################
-#  Copyright (c) 2014-2015 libbitcoin developers (see COPYING).
+#  Copyright (c) 2014-2015 libgroestlcoin developers (see COPYING).
 #
 #         GENERATED SOURCE CODE, DO NOT EDIT EXCEPT EXPERIMENTALLY
 #
@@ -11,7 +11,7 @@
 AC_PREREQ([2.65])
 
 # Process command-line arguments and perform initialization and verification.
-AC_INIT([libbitcoin], [2.9.0], [genjix@riseup.net])
+AC_INIT([libgroestlcoin], [2.9.0], [genjix@riseup.net])
 
 # Do compilation tests.
 AC_LANG(C++)
@@ -338,5 +338,5 @@ AS_CASE([${CC}], [*gcc*],
 
 # Process outputs into templates.
 #==============================================================================
-AC_CONFIG_FILES([Makefile libbitcoin.pc])
+AC_CONFIG_FILES([Makefile libgroestlcoin.pc])
 AC_OUTPUT

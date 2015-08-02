@@ -1,11 +1,11 @@
 #!/bin/bash
 ###############################################################################
-#  Copyright (c) 2014-2015 libbitcoin developers (see COPYING).
+#  Copyright (c) 2014-2015 libgroestlcoin developers (see COPYING).
 #
 #         GENERATED SOURCE CODE, DO NOT EDIT EXCEPT EXPERIMENTALLY
 #
 ###############################################################################
-# Script to build and install libbitcoin.
+# Script to build and install libgroestlcoin.
 #
 # Script options:
 # --build-icu              Builds ICU libraries.
@@ -29,7 +29,7 @@
 #==============================================================================
 # The default build directory.
 #------------------------------------------------------------------------------
-BUILD_DIR="build-libbitcoin"
+BUILD_DIR="build-libgroestlcoin"
 
 # ICU archive.
 #------------------------------------------------------------------------------
@@ -558,8 +558,8 @@ build_all()
 {
     build_from_tarball_icu $ICU_URL $ICU_ARCHIVE icu $PARALLEL $ICU_OPTIONS
     build_from_tarball_boost $BOOST_URL $BOOST_ARCHIVE boost $PARALLEL $BOOST_OPTIONS
-    build_from_github libbitcoin secp256k1 version3 $PARALLEL "$@" $SECP256K1_OPTIONS
-    build_from_travis libbitcoin libbitcoin version2 $PARALLEL "$@" $BITCOIN_OPTIONS
+    build_from_github libgroestlcoin secp256k1 version3 $PARALLEL "$@" $SECP256K1_OPTIONS
+    build_from_travis libgroestlcoin libgroestlcoin version2 $PARALLEL "$@" $BITCOIN_OPTIONS
 }
 
 

@@ -2,7 +2,7 @@
 
 [![Coverage Status](https://coveralls.io/repos/libgroestlcoin/libgroestlcoin/badge.svg)](https://coveralls.io/r/libgroestlcoin/libgroestlcoin)
 
-# Libbitcoin
+# Libgroestlcoin
 
 *The GroestlCoin Development Library*
 

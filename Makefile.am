@@ -1,5 +1,5 @@
 ###############################################################################
-#  Copyright (c) 2014-2015 libbitcoin developers (see COPYING).
+#  Copyright (c) 2014-2015 libgroestlcoin developers (see COPYING).
 #
 #         GENERATED SOURCE CODE, DO NOT EDIT EXCEPT EXPERIMENTALLY
 #
@@ -17,7 +17,7 @@ ACLOCAL_AMFLAGS = -I m4
 # files => ${pkgconfigdir}
 #------------------------------------------------------------------------------
 pkgconfig_DATA = \
-    libbitcoin.pc
+    libgroestlcoin.pc
 
 # files => ${docdir}
 #------------------------------------------------------------------------------
@@ -29,13 +29,13 @@ doc_DATA = \
     NEWS \
     README
 
-# src/libbitcoin.la => ${libdir}
+# src/libgroestlcoin.la => ${libdir}
 #------------------------------------------------------------------------------
-lib_LTLIBRARIES = src/libbitcoin.la
-src_libbitcoin_la_CPPFLAGS = -I${srcdir}/include ${icu} ${testnet} ${boost_CPPFLAGS} ${pthread_CPPFLAGS} ${icu_i18n_CPPFLAGS} ${secp256k1_CPPFLAGS}
-src_libbitcoin_la_LDFLAGS = ${boost_LDFLAGS}
-src_libbitcoin_la_LIBADD = ${boost_chrono_LIBS} ${boost_date_time_LIBS} ${boost_filesystem_LIBS} ${boost_locale_LIBS} ${boost_program_options_LIBS} ${boost_regex_LIBS} ${boost_system_LIBS} ${boost_thread_LIBS} ${pthread_LIBS} ${rt_LIBS} ${icu_i18n_LIBS} ${dl_LIBS} ${secp256k1_LIBS}
-src_libbitcoin_la_SOURCES = \
+lib_LTLIBRARIES = src/libgroestlcoin.la
+src_libgroestlcoin_la_CPPFLAGS = -I${srcdir}/include ${icu} ${testnet} ${boost_CPPFLAGS} ${pthread_CPPFLAGS} ${icu_i18n_CPPFLAGS} ${secp256k1_CPPFLAGS}
+src_libgroestlcoin_la_LDFLAGS = ${boost_LDFLAGS}
+src_libgroestlcoin_la_LIBADD = ${boost_chrono_LIBS} ${boost_date_time_LIBS} ${boost_filesystem_LIBS} ${boost_locale_LIBS} ${boost_program_options_LIBS} ${boost_regex_LIBS} ${boost_system_LIBS} ${boost_thread_LIBS} ${pthread_LIBS} ${rt_LIBS} ${icu_i18n_LIBS} ${dl_LIBS} ${secp256k1_LIBS}
+src_libgroestlcoin_la_SOURCES = \
     src/block.cpp \
     src/constants.cpp \
     src/error.cpp \
@@ -112,30 +112,30 @@ src_libbitcoin_la_SOURCES = \
     src/wallet/stealth_address.cpp \
     src/wallet/uri.cpp
 
-# local: examples/libbitcoin_examples
+# local: examples/libgroestlcoin_examples
 #------------------------------------------------------------------------------
 if WITH_EXAMPLES
 
-noinst_PROGRAMS = examples/libbitcoin_examples
-examples_libbitcoin_examples_CPPFLAGS = -I${srcdir}/include ${icu} ${testnet} ${boost_CPPFLAGS} ${pthread_CPPFLAGS} ${icu_i18n_CPPFLAGS} ${secp256k1_CPPFLAGS}
-examples_libbitcoin_examples_LDFLAGS = ${boost_LDFLAGS}
-examples_libbitcoin_examples_LDADD = src/libbitcoin.la ${boost_chrono_LIBS} ${boost_date_time_LIBS} ${boost_filesystem_LIBS} ${boost_locale_LIBS} ${boost_program_options_LIBS} ${boost_regex_LIBS} ${boost_system_LIBS} ${boost_thread_LIBS} ${pthread_LIBS} ${rt_LIBS} ${icu_i18n_LIBS} ${dl_LIBS} ${secp256k1_LIBS}
-examples_libbitcoin_examples_SOURCES = \
+noinst_PROGRAMS = examples/libgroestlcoin_examples
+examples_libgroestlcoin_examples_CPPFLAGS = -I${srcdir}/include ${icu} ${testnet} ${boost_CPPFLAGS} ${pthread_CPPFLAGS} ${icu_i18n_CPPFLAGS} ${secp256k1_CPPFLAGS}
+examples_libgroestlcoin_examples_LDFLAGS = ${boost_LDFLAGS}
+examples_libgroestlcoin_examples_LDADD = src/libgroestlcoin.la ${boost_chrono_LIBS} ${boost_date_time_LIBS} ${boost_filesystem_LIBS} ${boost_locale_LIBS} ${boost_program_options_LIBS} ${boost_regex_LIBS} ${boost_system_LIBS} ${boost_thread_LIBS} ${pthread_LIBS} ${rt_LIBS} ${icu_i18n_LIBS} ${dl_LIBS} ${secp256k1_LIBS}
+examples_libgroestlcoin_examples_SOURCES = \
     examples/main.cpp
 
 endif WITH_EXAMPLES
 
-# local: test/libbitcoin_test
+# local: test/libgroestlcoin_test
 #------------------------------------------------------------------------------
 if WITH_TESTS
 
-TESTS = libbitcoin_test_runner.sh
+TESTS = libgroestlcoin_test_runner.sh
 
-check_PROGRAMS = test/libbitcoin_test
-test_libbitcoin_test_CPPFLAGS = -I${srcdir}/include ${icu} ${testnet} ${boost_CPPFLAGS} ${pthread_CPPFLAGS} ${icu_i18n_CPPFLAGS} ${secp256k1_CPPFLAGS}
-test_libbitcoin_test_LDFLAGS = ${boost_LDFLAGS}
-test_libbitcoin_test_LDADD = src/libbitcoin.la ${boost_unit_test_framework_LIBS} ${boost_chrono_LIBS} ${boost_date_time_LIBS} ${boost_filesystem_LIBS} ${boost_locale_LIBS} ${boost_program_options_LIBS} ${boost_regex_LIBS} ${boost_system_LIBS} ${boost_thread_LIBS} ${pthread_LIBS} ${rt_LIBS} ${icu_i18n_LIBS} ${dl_LIBS} ${secp256k1_LIBS}
-test_libbitcoin_test_SOURCES = \
+check_PROGRAMS = test/libgroestlcoin_test
+test_libgroestlcoin_test_CPPFLAGS = -I${srcdir}/include ${icu} ${testnet} ${boost_CPPFLAGS} ${pthread_CPPFLAGS} ${icu_i18n_CPPFLAGS} ${secp256k1_CPPFLAGS}
+test_libgroestlcoin_test_LDFLAGS = ${boost_LDFLAGS}
+test_libgroestlcoin_test_LDADD = src/libgroestlcoin.la ${boost_unit_test_framework_LIBS} ${boost_chrono_LIBS} ${boost_date_time_LIBS} ${boost_filesystem_LIBS} ${boost_locale_LIBS} ${boost_program_options_LIBS} ${boost_regex_LIBS} ${boost_system_LIBS} ${boost_thread_LIBS} ${pthread_LIBS} ${rt_LIBS} ${icu_i18n_LIBS} ${dl_LIBS} ${secp256k1_LIBS}
+test_libgroestlcoin_test_SOURCES = \
     test/base10.cpp \
     test/base16.cpp \
     test/base58.cpp \
@@ -317,7 +317,7 @@ include_bitcoin_bitcoin_wallet_HEADERS = \
 # make target: examples
 #------------------------------------------------------------------------------
 target_examples = \
-    examples/libbitcoin_examples
+    examples/libgroestlcoin_examples
 
 examples: ${target_examples}
 
