@@ -19,12 +19,12 @@
  */
 #include <cstdlib>
 #include <string>
-#include <bitcoin/bitcoin.hpp>
+#include <groestlcoin/groestlcoin.hpp>
 #if !defined(__MACH__) && !defined(_MSC_VER)
 #include <unistd.h>
 #endif
 
-BC_USE_LIBBITCOIN_MAIN
+BC_USE_LIBGROESTLCOIN_MAIN
 
 // Testing out our http://utf8everywhere.org implementation.
 int bc::main(int argc, char* argv[])
