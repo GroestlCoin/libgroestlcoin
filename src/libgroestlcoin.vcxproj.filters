@@ -278,6 +278,9 @@
     <ClCompile Include="math\sphlib\groestl.cpp">
       <Filter>Source Files\math\sphlib</Filter>
     </ClCompile>
+    <ClCompile Include="utility\time.cpp">
+      <Filter>Source Files\utility</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="libgroestlcoin-config.h">

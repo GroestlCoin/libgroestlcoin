@@ -19,6 +19,8 @@
  */
 #include <groestlcoin/groestlcoin/math/hash.hpp>
 
+#include <string.h>
+
 #include <algorithm>
 #include <new>
 #include "../math/external/hmac_sha256.h"
@@ -28,8 +30,6 @@
 #include "../math/external/sha1.h"
 #include "../math/external/sha256.h"
 #include "../math/external/sha512.h"
-
-#include <string.h>
 
 extern "C" {
 #include "sphlib/sph_groestl.h"	//GRS
