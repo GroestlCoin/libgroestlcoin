@@ -281,6 +281,9 @@
     <ClCompile Include="utility\time.cpp">
       <Filter>Source Files\utility</Filter>
     </ClCompile>
+    <ClCompile Include="utility\timed_section.cpp">
+      <Filter>Source Files\utility</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="libgroestlcoin-config.h">

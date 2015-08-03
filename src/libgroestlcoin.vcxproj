@@ -258,6 +258,7 @@
     <ClCompile Include="utility\thread.cpp" />
     <ClCompile Include="utility\threadpool.cpp" />
     <ClCompile Include="utility\time.cpp" />
+    <ClCompile Include="utility\timed_section.cpp" />
     <ClCompile Include="wallet\address.cpp" />
     <ClCompile Include="wallet\dictionary.cpp" />
     <ClCompile Include="wallet\hd_keys.cpp" />

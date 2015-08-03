@@ -17,12 +17,12 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-#include <bitcoin/bitcoin/utility/timed_section.hpp>
+#include <groestlcoin/groestlcoin/utility/timed_section.hpp>
 
-#include <bitcoin/bitcoin/compat.h>
-#include <bitcoin/bitcoin/utility/logger.hpp>
+#include <groestlcoin/groestlcoin/compat.h>
+#include <groestlcoin/groestlcoin/utility/logger.hpp>
 
-namespace libbitcoin {
+namespace libgroestlcoin {
 
 timed_section::timed_section(
     const std::string& context, const std::string& section)
