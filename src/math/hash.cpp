@@ -30,7 +30,7 @@
 #include "../math/external/sha512.h"
 
 extern "C" {
-#include <sphlib/sph_groestl.h>	//GRS
+#include "sphlib/sph_groestl.h"	//GRS
 }
 
 namespace libgroestlcoin {
