@@ -124,11 +124,11 @@ index_list block_locator_indexes(size_t top_height)
 block_type genesis_block()
 {
     block_header_type header;
-    header.version = 1;
+    header.version = 112;
     header.previous_block_hash = null_hash;
     header.merkle = hash_literal(
         "3ce968df58f9c8a752306c4b7264afab93149dbc578bd08a42c446caaa6628bb");		//GRS
-    header.bits = 0x1d00ffff;
+    header.bits = 0x1e0fffff;
 
 #ifdef ENABLE_TESTNET
     header.timestamp = 1395342913;
@@ -150,7 +150,7 @@ block_type genesis_block()
     coinbase_tx.inputs.push_back(coinbase_input);
 
     transaction_output_type coinbase_output;
-    coinbase_output.value = coin_price(50);
+    coinbase_output.value = coin_price(0);		//GRS
     coinbase_output.script.push_operation(genesis_output_script);
     coinbase_output.script.push_operation(
         operation{ opcode::checksig, data_chunk() });
